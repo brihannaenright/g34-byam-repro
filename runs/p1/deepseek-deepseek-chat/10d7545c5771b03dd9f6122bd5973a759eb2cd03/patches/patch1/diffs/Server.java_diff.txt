@@ -1,0 +1,58 @@
+47c47
+< import io.dropwizard.Application;
+---
+> import io.dropwizard.core.Application;
+52,53c52,53
+< import io.dropwizard.setup.Bootstrap;
+< import io.dropwizard.setup.Environment;
+---
+> import io.dropwizard.core.setup.Bootstrap;
+> import io.dropwizard.core.setup.Environment;
+79,86d78
+<     /**
+<      * This method is called once by the sdk in order to create the main message handler
+<      *
+<      * @param config Configuration object (yaml)
+<      * @param env    Environment object
+<      * @return Instance of your class that implements {@link MessageHandlerBase}
+<      * @throws Exception allowed to throw exception
+<      */
+89,97c81
+<     /**
+<      * Override this method to put your custom initialization
+<      * NOTE: MessageHandler is not yet set when this method is invoked!
+<      *
+<      * @param config Configuration object (yaml)
+<      * @param env    Environment object
+<      * @throws Exception allowed to throw exception
+<      */
+<     @SuppressWarnings("RedundantThrows") // this method can be overridden
+---
+>     @SuppressWarnings("RedundantThrows")
+102,111c86
+<     /**
+<      * Override this method in case you need to add custom Resource and/or Task
+<      * {@link #addResource(Object)}
+<      * and {@link #addTask(io.dropwizard.servlets.tasks.Task)}
+<      *
+<      * @param config Configuration object (yaml)
+<      * @param env    Environment object
+<      * @throws Exception allowed to throw exception
+<      */
+<     @SuppressWarnings("RedundantThrows") // this method can be overridden
+---
+>     @SuppressWarnings("RedundantThrows")
+211,215c186,188
+<         /* --- Wire Common --- */
+<         addResource(new VersionResource()); // add version endpoint
+<         addResource(new StatusResource()); // empty status for k8s
+<         addResource(new RequestMdcFactoryFilter()); // MDC data
+<         /* //- Wire Common --- */
+---
+>         addResource(new VersionResource());
+>         addResource(new StatusResource());
+>         addResource(new RequestMdcFactoryFilter());
+244d216
+<         /* --- Wire Common --- */
+246d217
+<         /* //- Wire Common --- */

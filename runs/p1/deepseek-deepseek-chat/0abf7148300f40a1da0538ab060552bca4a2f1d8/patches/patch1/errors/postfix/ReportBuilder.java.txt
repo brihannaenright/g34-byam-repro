@@ -1,0 +1,2 @@
+348:incompatible types: int cannot be converted to java.lang.Float
+369:incompatible types: int cannot be converted to java.lang.Float

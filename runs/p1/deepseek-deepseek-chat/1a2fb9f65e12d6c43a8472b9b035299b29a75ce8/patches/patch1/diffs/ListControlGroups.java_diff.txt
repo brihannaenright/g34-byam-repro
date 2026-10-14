@@ -1,0 +1,28 @@
+37,43d36
+< import javax.validation.Validator;
+< import javax.validation.constraints.NotBlank;
+< import javax.validation.constraints.NotEmpty;
+< import javax.validation.constraints.NotNull;
+< import javax.validation.metadata.BeanDescriptor;
+< import javax.validation.metadata.ConstraintDescriptor;
+< import javax.validation.metadata.ElementDescriptor;
+121,122d113
+<                 Validator validator = HibernateValidatorProperty.validatorFactory.getValidator();
+<                 BeanDescriptor constraintDescriptors = validator.getConstraintsForClass(modelClass);
+131,144c122
+<                         boolean required = false;
+< 
+<                         ElementDescriptor constraintDescriptor = constraintDescriptors.getConstraintsForProperty(descriptor.getName());
+<                         if(constraintDescriptor!=null){
+<                                 Set<ConstraintDescriptor<?>> constraintsSet = constraintDescriptor.getConstraintDescriptors();
+<                                 for(ConstraintDescriptor<?> constraint : constraintsSet){
+<                                         if(constraint.getAnnotation() instanceof NotNull ||
+<                                            constraint.getAnnotation() instanceof NotEmpty ||
+<                                            constraint.getAnnotation() instanceof NotBlank)
+<                                                 required = true;
+<                                 }
+<                         }
+< 
+<                         objectProperties.add(new ObjectProperties(descriptor, required));
+---
+>                         objectProperties.add(new ObjectProperties(descriptor, false));

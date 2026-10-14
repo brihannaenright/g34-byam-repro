@@ -1,0 +1,20 @@
+82:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+87:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+71:cannot find symbol  symbol: class Application 
+136:cannot access jakarta.validation.Validator  class file for jakarta.validation.Validator not found 
+263:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+92:cannot find symbol  symbol:   class Bootstrap   location: class com.wire.lithium.Server<Config> 
+79:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+47:package io.dropwizard.core does not exist
+96:method does not override or implement a method from a supertype
+52:package io.dropwizard.core.setup does not exist
+134:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+74:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+95:<anonymous com.wire.lithium.Server$1> is not abstract and does not override abstract method getSwaggerBundleConfiguration(io.dropwizard.Configuration) in io.federecio.dropwizard.swagger.SwaggerBundle
+139:cannot find symbol  symbol:   method getName()   location: class com.wire.lithium.Server<Config> 
+154:cannot find symbol  symbol:   method getName()   location: class com.wire.lithium.Server<Config> 
+53:package io.dropwizard.core.setup does not exist
+149:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+103:method does not override or implement a method from a supertype
+104:cannot find symbol  symbol:   class Environment   location: class com.wire.lithium.Server<Config> 
+91:method does not override or implement a method from a supertype

@@ -1,0 +1,443 @@
+16:03:56.829 [main] INFO  se.kth.Bump - 
+16:03:56.831 [main] INFO  se.kth.Bump - |-------------------------------------------------------------------------|
+16:03:56.831 [main] INFO  se.kth.Bump - | Bump analysis started. PIPELINE: BASELINE MODEL: deepseek/deepseek-chat |
+16:03:56.831 [main] INFO  se.kth.Bump - |-------------------------------------------------------------------------|
+16:03:56.831 [main] INFO  se.kth.Bump - 
+16:03:56.832 [main] INFO  se.kth.Bump - Filtering breaking dependency updates
+16:03:56.832 [main] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 14fc5fa696f499cac48401b3a86882b3bf7d9b82 |
+16:03:57.228 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - | Processing breaking update: 067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9 |
+16:03:57.228 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 0abf7148300f40a1da0538ab060552bca4a2f1d8 |
+16:03:57.228 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 10d7545c5771b03dd9f6122bd5973a759eb2cd03 |
+16:03:57.228 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:03:57.228 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:03:57.228 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:03:57.283 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9-breaking
+16:03:57.283 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:10d7545c5771b03dd9f6122bd5973a759eb2cd03-breaking
+16:03:57.283 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:0abf7148300f40a1da0538ab060552bca4a2f1d8-breaking
+16:03:57.283 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:14fc5fa696f499cac48401b3a86882b3bf7d9b82-breaking
+16:03:57.284 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9-breaking ...
+16:03:57.284 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:0abf7148300f40a1da0538ab060552bca4a2f1d8-breaking ...
+16:03:57.284 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:14fc5fa696f499cac48401b3a86882b3bf7d9b82-breaking ...
+16:03:57.284 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:10d7545c5771b03dd9f6122bd5973a759eb2cd03-breaking ...
+16:04:07.111 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:10d7545c5771b03dd9f6122bd5973a759eb2cd03-breaking
+16:04:07.717 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:0abf7148300f40a1da0538ab060552bca4a2f1d8-breaking
+16:04:07.787 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9-breaking
+16:04:07.953 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+16:04:07.953 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 10d7545c5771b03dd9f6122bd5973a759eb2cd03 from container to local path
+16:04:08.161 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:04:08.161 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 0abf7148300f40a1da0538ab060552bca4a2f1d8 from container to local path
+16:04:08.175 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - 
+16:04:08.175 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copying folder 067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9 from container to local path
+16:04:08.249 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 10d7545c5771b03dd9f6122bd5973a759eb2cd03 copied successfully
+16:04:08.428 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 0abf7148300f40a1da0538ab060552bca4a2f1d8 copied successfully
+16:04:08.688 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Folder 067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9 copied successfully
+16:04:08.879 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:14fc5fa696f499cac48401b3a86882b3bf7d9b82-breaking
+16:04:08.905 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 92a93911f1cae20d8663f1009a32c7d84ed7c36af5a67ca3f27dc8489ad5a992 removed successfully
+16:04:08.916 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/io/dropwizard/dropwizard-client/4.0.0/dropwizard-client-4.0.0.jar copied successfully
+16:04:08.934 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: d52521258ce84e8e13daa1e9058f810918fbe4f0dd89aaddc39255b5c3a2b68d removed successfully
+16:04:09.024 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 3b71a5470b1a8821ee72c2645b0010f44dd53571af3684d00bab892e2c8ef15a removed successfully
+16:04:09.079 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:04:09.079 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 14fc5fa696f499cac48401b3a86882b3bf7d9b82 from container to local path
+16:04:09.127 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+16:04:09.216 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/net/sf/jasperreports/jasperreports/6.19.1/jasperreports-6.19.1.jar copied successfully
+16:04:09.233 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 809b9e157e99fe435ceb26c498acaa5c9979b50c8209046951aa5a400ac500b2 removed successfully
+16:04:09.276 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:04:09.334 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: d5ecd56b157f632ffda5f7ba90d8e3afb50a10ab607bf2d4609c0ab1ef447965 removed successfully
+16:04:09.357 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/apache/thrift/libthrift/0.16.0/libthrift-0.16.0.jar copied successfully
+16:04:09.377 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: bb888f91e307be9ffc3160d1e067a9951ecd88ddd89dbb71692bfa1231f89248 removed successfully
+16:04:09.414 [ForkJoinPool-1-worker-3] ERROR se.kth.GitManager - Repository HEAD is null
+16:04:09.520 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:04:09.525 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:04:09.574 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:04:09.596 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:0abf7148300f40a1da0538ab060552bca4a2f1d8-breakingBase Maven image exists.
+16:04:09.606 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:04:09.609 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /biapi/src/main/java/xdev/tableexport/export/ReportBuilder.java
+16:04:09.611 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:04:09.612 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:04:09.615 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+16:04:09.805 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch original_status created
+16:04:09.806 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:04:09.916 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:04:09.934 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9-breakingBase Maven image exists.
+16:04:09.937 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:04:09.940 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - File: /singer/singer-commons/src/main/java/com/pinterest/singer/loggingaudit/client/AuditEventKafkaSender.java
+16:04:09.941 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:04:09.941 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:04:09.941 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Waiting for response...
+16:04:11.463 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 14fc5fa696f499cac48401b3a86882b3bf7d9b82 copied successfully
+16:04:11.954 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 27d5b9f2a1f1f9d13cddc8a2817f2293f44facadf827468368745cd4e4677da0 removed successfully
+16:04:11.983 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/flywaydb/flyway-core/9.21.1/flyway-core-9.21.1.jar copied successfully
+16:04:11.997 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 8be46107cffac559e377d291d83777001f2938dd55215ad60455cf3c25242b55 removed successfully
+16:04:12.031 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:04:12.217 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+16:04:12.218 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:04:12.242 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:04:12.257 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:10d7545c5771b03dd9f6122bd5973a759eb2cd03-breakingBase Maven image exists.
+16:04:12.265 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:04:12.267 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /lithium/src/main/java/com/wire/lithium/Server.java
+16:04:12.267 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:04:12.267 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:04:12.268 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+16:04:12.815 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:04:12.815 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:04:13.116 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:04:13.130 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:14fc5fa696f499cac48401b3a86882b3bf7d9b82-breakingBase Maven image exists.
+16:04:13.132 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:04:13.134 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /nem/nis/src/main/java/org/nem/specific/deploy/appconfig/NisAppConfig.java
+16:04:13.134 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:04:13.134 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:04:13.134 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+16:05:13.620 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:05:13.627 [ForkJoinPool-1-worker-4] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/10d7545c5771b03dd9f6122bd5973a759eb2cd03/patches/patch1/diffs/Server.java_diff.txt
+16:05:13.644 [ForkJoinPool-1-worker-4] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:05:13.926 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Created container with ID: 62458f1fd2592f11ab03792b7b854062ae9ba754329d18db365ef69ac425da9d
+16:05:14.371 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copied folder to container
+16:05:15.033 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:9a69487b8efe0e86b477906f41f54e13ff4587e97fce6cefcc89415ed0c152ec
+16:05:15.036 [ForkJoinPool-1-worker-4] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:05:18.490 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:05:18.503 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 063a85caeb48555e40a5758c4bc6e2b3a36d12f511fb541b9ab5ad784ede1a08 removed successfully
+16:05:18.507 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=1, postfixErrors=20, fixedErrors=1, unfixedErrors=0, newErrors=20, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/10d7545c5771b03dd9f6122bd5973a759eb2cd03/patches/patch1, successful=false]
+16:05:18.660 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:10d7545c5771b03dd9f6122bd5973a759eb2cd03-breaking deleted successfully
+16:05:18.662 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:10d7545c5771b03dd9f6122bd5973a759eb2cd03-pre not found, skipping deletion
+16:05:18.662 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:05:18.662 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:05:18.662 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 0305beafdecb0b28f7c94264ed20cdc4e41ff067 |
+16:05:18.662 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:05:18.662 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:05:18.664 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:0305beafdecb0b28f7c94264ed20cdc4e41ff067-breaking
+16:05:18.664 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:0305beafdecb0b28f7c94264ed20cdc4e41ff067-breaking ...
+16:05:21.888 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:0305beafdecb0b28f7c94264ed20cdc4e41ff067-breaking
+16:05:22.083 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+16:05:22.083 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 0305beafdecb0b28f7c94264ed20cdc4e41ff067 from container to local path
+16:05:22.180 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 0305beafdecb0b28f7c94264ed20cdc4e41ff067 copied successfully
+16:05:22.547 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 23ae0ff4c4e852f865b46eaa1447e8457ae81f3d860c4623fe877fcbe6913f40 removed successfully
+16:05:22.603 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar copied successfully
+16:05:22.615 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 5cf072cea6a3cbccdc1af40de2a71fee8d0c050cbdbbee40568e20e5ac962257 removed successfully
+16:05:22.629 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+16:05:22.768 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+16:05:22.768 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:05:22.820 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:05:22.835 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:0305beafdecb0b28f7c94264ed20cdc4e41ff067-breakingBase Maven image exists.
+16:05:22.835 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:05:22.837 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /pdb/src/main/java/com/feedzai/commons/sql/abstraction/engine/impl/mysql/MySqlQueryExceptionHandler.java
+16:05:22.837 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:05:22.837 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:05:22.837 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+16:05:34.412 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:05:34.416 [ForkJoinPool-1-worker-4] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/0305beafdecb0b28f7c94264ed20cdc4e41ff067/patches/patch1/diffs/MySqlQueryExceptionHandler.java_diff.txt
+16:05:34.461 [ForkJoinPool-1-worker-4] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:05:34.518 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Created container with ID: 9f945f2eb0df06e69faa391f770eb24fc27c1c511893884753806198df500c45
+16:05:35.243 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copied folder to container
+16:05:35.789 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:2ce2b76cb0476b993591916df8f3a8acd4828d93a5d734d0935f84ad8175bf87
+16:05:35.791 [ForkJoinPool-1-worker-4] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:05:48.581 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:05:48.586 [ForkJoinPool-1-worker-2] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/0abf7148300f40a1da0538ab060552bca4a2f1d8/patches/patch1/diffs/ReportBuilder.java_diff.txt
+16:05:48.601 [ForkJoinPool-1-worker-2] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:05:48.669 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Created container with ID: 32453653b643de19eb85090f15ffbf4f4198f6b79f6ce4ec772a1221fc94fdf6
+16:05:49.270 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copied folder to container
+16:05:49.936 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:ade90becff86d4c4a83cf4f7c27905d9a5232b1c2dee3320ba8e1d51b35bd22c
+16:05:49.939 [ForkJoinPool-1-worker-2] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:05:53.627 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:05:53.641 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 930719f720819ed0bc5fc4b090dcafcec1b7f98d23ef79d5e68da3a33249daef removed successfully
+16:05:53.642 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=1, postfixErrors=2, fixedErrors=0, unfixedErrors=1, newErrors=1, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/0abf7148300f40a1da0538ab060552bca4a2f1d8/patches/patch1, successful=false]
+16:05:53.735 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:0abf7148300f40a1da0538ab060552bca4a2f1d8-breaking deleted successfully
+16:05:53.737 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:0abf7148300f40a1da0538ab060552bca4a2f1d8-pre not found, skipping deletion
+16:05:53.737 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:05:53.737 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:05:53.737 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 165381d26b2c3d2278fde88c16f95807506451fe |
+16:05:53.737 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:05:53.737 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:05:53.739 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:165381d26b2c3d2278fde88c16f95807506451fe-breaking
+16:05:53.739 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:165381d26b2c3d2278fde88c16f95807506451fe-breaking ...
+16:06:00.375 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:06:00.380 [ForkJoinPool-1-worker-3] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9/patches/patch1/diffs/AuditEventKafkaSender.java_diff.txt
+16:06:00.426 [ForkJoinPool-1-worker-3] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:06:00.922 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Created container with ID: ca73c098f9e57423a7973853d490ccc06338d86243ed950ba02b3ebae07ba916
+16:06:00.960 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:165381d26b2c3d2278fde88c16f95807506451fe-breaking
+16:06:01.213 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:06:01.213 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 165381d26b2c3d2278fde88c16f95807506451fe from container to local path
+16:06:02.037 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copied folder to container
+16:06:02.627 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 165381d26b2c3d2278fde88c16f95807506451fe copied successfully
+16:06:03.048 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:501242b1cb16af971ae3ac59871ac69797199dee8c00b37fbe45d1ea197963e8
+16:06:03.050 [ForkJoinPool-1-worker-3] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:06:03.147 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 99b0b35da878a1e6702fb552415ef49a7aaa49cbba26dfb031163566a79faee3 removed successfully
+16:06:03.186 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/github/javaparser/javaparser-core/3.24.0/javaparser-core-3.24.0.jar copied successfully
+16:06:03.200 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 55128c4e3913c7eee756b63f8f01d5f6a66525b433deb306b4e8a78a7daccb94 removed successfully
+16:06:03.237 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:06:04.454 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:06:04.454 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:06:05.405 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:06:05.422 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:165381d26b2c3d2278fde88c16f95807506451fe-breakingBase Maven image exists.
+16:06:05.423 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:06:05.426 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /scheduler/safeplace/src/test/java/org/btrplace/safeplace/DSN.java
+16:06:05.426 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:06:05.426 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:06:05.426 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+16:06:07.961 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:06:07.980 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: c07d772a483ec4d7349987b467a308034569a1093b60b3e6e36205602d9f2fb8 removed successfully
+16:06:07.982 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=1, postfixErrors=1, fixedErrors=1, unfixedErrors=0, newErrors=1, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9/patches/patch1, successful=false]
+16:06:08.040 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:06:08.045 [ForkJoinPool-1-worker-1] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/14fc5fa696f499cac48401b3a86882b3bf7d9b82/patches/patch1/diffs/NisAppConfig.java_diff.txt
+16:06:08.087 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9-breaking deleted successfully
+16:06:08.089 [ForkJoinPool-1-worker-3] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9-pre not found, skipping deletion
+16:06:08.089 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:06:08.089 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:06:08.089 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - | Processing breaking update: 1a2fb9f65e12d6c43a8472b9b035299b29a75ce8 |
+16:06:08.089 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:06:08.089 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:06:08.091 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:1a2fb9f65e12d6c43a8472b9b035299b29a75ce8-breaking
+16:06:08.091 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:1a2fb9f65e12d6c43a8472b9b035299b29a75ce8-breaking ...
+16:06:08.289 [ForkJoinPool-1-worker-1] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:06:08.369 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Created container with ID: 0fa4234fa19dc91e71e8552c15bd53140abcdf193cad3439e59748cd1edf2bce
+16:06:10.086 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:1a2fb9f65e12d6c43a8472b9b035299b29a75ce8-breaking
+16:06:10.343 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - 
+16:06:10.343 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copying folder 1a2fb9f65e12d6c43a8472b9b035299b29a75ce8 from container to local path
+16:06:10.527 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Folder 1a2fb9f65e12d6c43a8472b9b035299b29a75ce8 copied successfully
+16:06:10.908 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: f3f36c72a5e0f86d342c359829cb201e0f28b5f4aa394f3a79065fb302b32400 removed successfully
+16:06:10.921 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - File /root/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.1/jakarta.validation-api-3.0.1.jar copied successfully
+16:06:10.934 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 43cdd9fa5ddbdb112b8f297832c4076248eaa549ae786f86bfae1e4ea58c0865 removed successfully
+16:06:10.946 [ForkJoinPool-1-worker-3] ERROR se.kth.GitManager - Repository HEAD is null
+16:06:11.002 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch original_status created
+16:06:11.002 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:06:11.016 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:06:11.027 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:1a2fb9f65e12d6c43a8472b9b035299b29a75ce8-breakingBase Maven image exists.
+16:06:11.028 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:06:11.030 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - File: /wicket-crudifier/src/main/java/com/premiumminds/wicket/crudifier/form/elements/ListControlGroups.java
+16:06:11.030 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:06:11.030 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:06:11.031 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Waiting for response...
+16:06:14.407 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copied folder to container
+16:06:16.590 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:49a59f47ee94cf05cbe5e1a35e7c65b2e05380d243da761e44c9928376b9aacd
+16:06:16.592 [ForkJoinPool-1-worker-1] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:06:52.489 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:06:52.539 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 598cfcea4ad0fbaf23c1774b89aa38bb4948c67c5c5b6671b1e37683a53316a7 removed successfully
+16:06:52.543 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=5, postfixErrors=1, fixedErrors=5, unfixedErrors=0, newErrors=1, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/14fc5fa696f499cac48401b3a86882b3bf7d9b82/patches/patch1, successful=false]
+16:06:52.830 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:14fc5fa696f499cac48401b3a86882b3bf7d9b82-breaking deleted successfully
+16:06:52.831 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:14fc5fa696f499cac48401b3a86882b3bf7d9b82-pre not found, skipping deletion
+16:06:52.832 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:06:52.832 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:06:52.832 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 115827c6675f532a4d33751d1a0c0ba394bbd304 |
+16:06:52.832 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:06:52.832 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:06:52.833 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:115827c6675f532a4d33751d1a0c0ba394bbd304-breaking
+16:06:52.833 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:115827c6675f532a4d33751d1a0c0ba394bbd304-breaking ...
+16:06:55.964 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:115827c6675f532a4d33751d1a0c0ba394bbd304-breaking
+16:06:56.181 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:06:56.181 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 115827c6675f532a4d33751d1a0c0ba394bbd304 from container to local path
+16:06:56.349 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 115827c6675f532a4d33751d1a0c0ba394bbd304 copied successfully
+16:06:56.764 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: f697912968b24ab5a16b548ca829fd18a15d16186f540896d64b7000de65d133 removed successfully
+16:06:56.776 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.0.0/jakarta.servlet-api-6.0.0.jar copied successfully
+16:06:56.789 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: c8da8653e9d8f7fba7359fbc1f818900368913feab9a9babb33fa7c82eaea06e removed successfully
+16:06:56.811 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:06:56.849 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:06:56.850 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:06:56.861 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:06:56.873 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:115827c6675f532a4d33751d1a0c0ba394bbd304-breakingBase Maven image exists.
+16:06:56.874 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:06:56.876 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /dropwizard-pac4j/src/main/java/org/pac4j/dropwizard/J2EHelper.java
+16:06:56.876 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:06:56.876 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:06:56.877 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+16:06:58.723 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:06:58.731 [ForkJoinPool-1-worker-3] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/1a2fb9f65e12d6c43a8472b9b035299b29a75ce8/patches/patch1/diffs/ListControlGroups.java_diff.txt
+16:06:58.745 [ForkJoinPool-1-worker-3] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:06:58.796 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Created container with ID: fcc1e9cd9003ac4e20f36a79c25570f28ac1be5efbd85a9b2c9338e46cb2d79d
+16:06:59.274 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copied folder to container
+16:06:59.670 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:dca3eae7e1661a99e67f2bf03541ae36b7a5c002b464b67a4dc1c4a83bc0cade
+16:06:59.671 [ForkJoinPool-1-worker-3] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:07:02.749 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:07:02.762 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: ff2b2056de36fc7a650fe81c905703a54f88907938c0673b128fddf3ca9bf3e0 removed successfully
+16:07:02.764 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=1, unfixedFiles=0, newFiles=1, prefixErrors=15, postfixErrors=2, fixedErrors=15, unfixedErrors=0, newErrors=2, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/1a2fb9f65e12d6c43a8472b9b035299b29a75ce8/patches/patch1, successful=false]
+16:07:02.817 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1a2fb9f65e12d6c43a8472b9b035299b29a75ce8-breaking deleted successfully
+16:07:02.818 [ForkJoinPool-1-worker-3] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1a2fb9f65e12d6c43a8472b9b035299b29a75ce8-pre not found, skipping deletion
+16:07:02.818 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:07:02.818 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:07:02.818 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - | Processing breaking update: 07fad972bb884e9fa6143b4f870d08305811607d |
+16:07:02.818 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:07:02.818 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:07:02.820 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:07fad972bb884e9fa6143b4f870d08305811607d-breaking
+16:07:02.820 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:07fad972bb884e9fa6143b4f870d08305811607d-breaking ...
+16:07:10.166 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:07fad972bb884e9fa6143b4f870d08305811607d-breaking
+16:07:10.470 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - 
+16:07:10.470 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copying folder 07fad972bb884e9fa6143b4f870d08305811607d from container to local path
+16:07:10.760 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Folder 07fad972bb884e9fa6143b4f870d08305811607d copied successfully
+16:07:11.208 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: f5f5c4f1d753db8b9f0be08e5b3dbbb7bdcdb821fc178875645826e218e72bf8 removed successfully
+16:07:11.222 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - File /root/.m2/repository/ch/qos/logback/logback-classic/1.4.1/logback-classic-1.4.1.jar copied successfully
+16:07:11.233 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: b7c43f053b91ad8f82523972176e9dea1eb6134a9f2fb6d05ef8797123327fa3 removed successfully
+16:07:11.278 [ForkJoinPool-1-worker-3] ERROR se.kth.GitManager - Repository HEAD is null
+16:07:11.484 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch original_status created
+16:07:11.485 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:07:11.537 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:07:11.551 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:07fad972bb884e9fa6143b4f870d08305811607d-breakingBase Maven image exists.
+16:07:11.552 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:07:11.554 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - File: /pay-adminusers/src/test/java/uk/gov/pay/adminusers/queue/event/EventMessageHandlerTest.java
+16:07:11.554 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:07:11.554 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:07:11.554 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Waiting for response...
+16:07:14.971 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:07:14.974 [ForkJoinPool-1-worker-1] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/115827c6675f532a4d33751d1a0c0ba394bbd304/patches/patch1/diffs/J2EHelper.java_diff.txt
+16:07:14.986 [ForkJoinPool-1-worker-1] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:07:15.039 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Created container with ID: 50eb938bfa1a7a51ecfdbbba905e01957b44b6492be12911ce350441a814c3ec
+16:07:15.428 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copied folder to container
+16:07:15.872 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:42400fe0b1e759200cc09e25d30b5e27f12d699569813e8c04b7c1b6035b9e54
+16:07:15.874 [ForkJoinPool-1-worker-1] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:07:19.244 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:07:19.257 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: acf5770c473a18b03f93d2b9f0a1f70e2852a89e25e9b1b3f77a6f584d9fab94 removed successfully
+16:07:19.258 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=6, postfixErrors=2, fixedErrors=4, unfixedErrors=2, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/115827c6675f532a4d33751d1a0c0ba394bbd304/patches/patch1, successful=false]
+16:07:19.332 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:115827c6675f532a4d33751d1a0c0ba394bbd304-breaking deleted successfully
+16:07:19.334 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:115827c6675f532a4d33751d1a0c0ba394bbd304-pre not found, skipping deletion
+16:07:19.334 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:07:19.334 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:07:19.334 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 0a11c04038eae517540051dbf51f7f26b7221f20 |
+16:07:19.334 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:07:19.334 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:07:19.336 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:0a11c04038eae517540051dbf51f7f26b7221f20-breaking
+16:07:19.336 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:0a11c04038eae517540051dbf51f7f26b7221f20-breaking ...
+16:07:22.543 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:07:22.548 [ForkJoinPool-1-worker-2] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/165381d26b2c3d2278fde88c16f95807506451fe/patches/patch1/diffs/DSN.java_diff.txt
+16:07:23.383 [ForkJoinPool-1-worker-2] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:07:23.497 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Created container with ID: 2995f1d2d26219ce4339ad412034cf286d6b82c5d7a4d33ebc82ea628b4dcc08
+16:07:24.018 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:0a11c04038eae517540051dbf51f7f26b7221f20-breaking
+16:07:24.181 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:07:24.181 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 0a11c04038eae517540051dbf51f7f26b7221f20 from container to local path
+16:07:24.307 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 0a11c04038eae517540051dbf51f7f26b7221f20 copied successfully
+16:07:24.747 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: c4a102131ab9e98d9d60c57e678e4826a52923dd7d1193896a4854618a299535 removed successfully
+16:07:24.760 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar copied successfully
+16:07:24.772 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: d1f8e4527ea62bb9162d50be8a34b3c10b2eb0d45551b5b174699837f0d4f6ae removed successfully
+16:07:24.801 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:07:24.943 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:07:24.943 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:07:24.986 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:07:24.997 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:0a11c04038eae517540051dbf51f7f26b7221f20-breakingBase Maven image exists.
+16:07:24.998 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:07:25.000 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /simplelocalize-cli/src/main/java/io/simplelocalize/cli/configuration/ConfigurationLoader.java
+16:07:25.000 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:07:25.000 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:07:25.000 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+16:07:28.337 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copied folder to container
+16:07:30.451 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:4c772c9eaf05aea30835cd6826189c6d5382d6d929e64d8be3dfee92b89f8dbc
+16:07:30.452 [ForkJoinPool-1-worker-2] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:07:36.788 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:07:36.793 [ForkJoinPool-1-worker-1] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/0a11c04038eae517540051dbf51f7f26b7221f20/patches/patch1/diffs/ConfigurationLoader.java_diff.txt
+16:07:36.843 [ForkJoinPool-1-worker-1] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:07:36.917 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Created container with ID: bb1214f21a041e633f2c44c0bd041834493386d0e5d1176e3304650fb3caa7df
+16:07:37.900 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copied folder to container
+16:07:38.813 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:5434a565638915f75370a6097d3442d558e9db0b4c48a2d1cdd897663b4e85d5
+16:07:38.815 [ForkJoinPool-1-worker-1] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:07:51.093 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Breaking commit did not fail in the 1 attempt.
+16:07:51.170 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 559f0c7f3b03d064ba808176985d045caf78b82aa552cdbfc9df770d478333c3 removed successfully
+16:07:51.268 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=BUILD_SUCCESS, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=2, postfixErrors=0, fixedErrors=2, unfixedErrors=0, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/0305beafdecb0b28f7c94264ed20cdc4e41ff067/patches/patch1, successful=true]
+16:07:51.268 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Build success in attempt: 1
+16:07:51.372 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:0305beafdecb0b28f7c94264ed20cdc4e41ff067-breaking deleted successfully
+16:07:51.374 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:0305beafdecb0b28f7c94264ed20cdc4e41ff067-pre not found, skipping deletion
+16:07:51.374 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:07:51.374 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:07:51.374 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 1820a966ae02ad8df44d0a0106cba65ceaf3aa95 |
+16:07:51.374 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:07:51.374 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:07:51.377 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:1820a966ae02ad8df44d0a0106cba65ceaf3aa95-breaking
+16:07:51.377 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:1820a966ae02ad8df44d0a0106cba65ceaf3aa95-breaking ...
+16:07:58.648 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:1820a966ae02ad8df44d0a0106cba65ceaf3aa95-breaking
+16:07:58.997 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+16:07:58.997 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 1820a966ae02ad8df44d0a0106cba65ceaf3aa95 from container to local path
+16:07:59.336 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 1820a966ae02ad8df44d0a0106cba65ceaf3aa95 copied successfully
+16:07:59.781 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: fdd0b8c535f9bdc418be052908fd18c6975ffad4c318b1652014105a404aac6b removed successfully
+16:07:59.795 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/ch/qos/logback/logback-classic/1.4.4/logback-classic-1.4.4.jar copied successfully
+16:07:59.809 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 4a6f196bbbe484367d20a488cb6437eeae6cdf2033acea9b2e5dfa552d71e8a9 removed successfully
+16:07:59.852 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+16:08:00.070 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+16:08:00.070 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:08:00.127 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:08:00.139 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:1820a966ae02ad8df44d0a0106cba65ceaf3aa95-breakingBase Maven image exists.
+16:08:00.141 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:08:00.143 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /pay-adminusers/src/test/java/uk/gov/pay/adminusers/queue/event/EventMessageHandlerTest.java
+16:08:00.143 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:08:00.143 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:08:00.143 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+16:08:00.398 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Breaking commit did not fail in the 1 attempt.
+16:08:00.451 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 510f3b0ab5002a129b092953bb876d6156f4df5b3f5a3c404f821a2bd5545074 removed successfully
+16:08:00.515 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=BUILD_SUCCESS, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/0a11c04038eae517540051dbf51f7f26b7221f20/patches/patch1, successful=true]
+16:08:00.515 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Build success in attempt: 1
+16:08:00.646 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:0a11c04038eae517540051dbf51f7f26b7221f20-breaking deleted successfully
+16:08:00.647 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:0a11c04038eae517540051dbf51f7f26b7221f20-pre not found, skipping deletion
+16:08:00.648 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:08:00.648 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:08:00.648 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 16ae40b1e17e14ee3ae20ac211647e47399a01a9 |
+16:08:00.648 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:08:00.648 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:08:00.650 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:16ae40b1e17e14ee3ae20ac211647e47399a01a9-breaking
+16:08:00.650 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:16ae40b1e17e14ee3ae20ac211647e47399a01a9-breaking ...
+16:08:04.337 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:16ae40b1e17e14ee3ae20ac211647e47399a01a9-breaking
+16:08:04.573 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:08:04.573 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 16ae40b1e17e14ee3ae20ac211647e47399a01a9 from container to local path
+16:08:04.857 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 16ae40b1e17e14ee3ae20ac211647e47399a01a9 copied successfully
+16:08:05.303 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 5c595e2d6efbc660038ba7dfd7a37dc48791a36adfcf7e9e1a4dee20d75306d8 removed successfully
+16:08:05.315 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/net/lingala/zip4j/zip4j/2.11.1/zip4j-2.11.1.jar copied successfully
+16:08:05.329 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: b2a3ab64a707031e938fa11035e6f77da9d825a0a29cdf37c6f29404532e36ac removed successfully
+16:08:05.361 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:08:05.484 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:08:05.484 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:08:05.522 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:08:05.538 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:16ae40b1e17e14ee3ae20ac211647e47399a01a9-breakingBase Maven image exists.
+16:08:05.539 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:08:05.541 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /allure-maven/src/main/java/io/qameta/allure/maven/AllureCommandline.java
+16:08:05.541 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:08:05.541 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:08:05.542 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+16:08:17.977 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Breaking commit did not fail in the 1 attempt.
+16:08:18.019 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 905b8c61401edc1eb2537eebb301205ecaad39bffb93439241540b183fa457f1 removed successfully
+16:08:18.023 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=BUILD_SUCCESS, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=2, postfixErrors=0, fixedErrors=2, unfixedErrors=0, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/165381d26b2c3d2278fde88c16f95807506451fe/patches/patch1, successful=true]
+16:08:18.023 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Build success in attempt: 1
+16:08:18.259 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:165381d26b2c3d2278fde88c16f95807506451fe-breaking deleted successfully
+16:08:18.260 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:165381d26b2c3d2278fde88c16f95807506451fe-pre not found, skipping deletion
+16:08:54.542 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:08:54.546 [ForkJoinPool-1-worker-3] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/07fad972bb884e9fa6143b4f870d08305811607d/patches/patch1/diffs/EventMessageHandlerTest.java_diff.txt
+16:08:54.590 [ForkJoinPool-1-worker-3] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:08:54.636 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Created container with ID: 8c0a15aada6acaa4a211ab8da7207f0ef6a1ccbe0e48ac8f21ea3784ba99a63e
+16:08:56.119 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copied folder to container
+16:08:57.212 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:fa44e4515413d87bc78d190eeb3df18983b263dd7f6bbcf33bf16d499e068af7
+16:08:57.214 [ForkJoinPool-1-worker-3] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:08:59.793 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:08:59.797 [ForkJoinPool-1-worker-1] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/16ae40b1e17e14ee3ae20ac211647e47399a01a9/patches/patch1/diffs/AllureCommandline.java_diff.txt
+16:08:59.825 [ForkJoinPool-1-worker-1] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:08:59.887 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Created container with ID: 67a519254ccd717909f5fc1762ccc72c2e3fce12b9ba53e56d515fa73d741047
+16:09:00.600 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copied folder to container
+16:09:01.287 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:a276dec66fe76d2027a18f9cc29747ea192afaa26ef84367195c53102064638a
+16:09:01.289 [ForkJoinPool-1-worker-1] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:09:09.609 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:09:09.639 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 3236289b60587be085771f16ed356b54a39f27b544d6c142f7928c0fab4603cc removed successfully
+16:09:09.642 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=1, postfixErrors=1, fixedErrors=0, unfixedErrors=1, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/07fad972bb884e9fa6143b4f870d08305811607d/patches/patch1, successful=false]
+16:09:09.883 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:07fad972bb884e9fa6143b4f870d08305811607d-breaking deleted successfully
+16:09:09.885 [ForkJoinPool-1-worker-3] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:07fad972bb884e9fa6143b4f870d08305811607d-pre not found, skipping deletion
+16:09:10.288 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Breaking commit did not fail in the 1 attempt.
+16:09:10.320 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 4d1f86a46a42d915b24ebeb0a8d29936f7f8ca233c7a4be18b3a504ac91f7bb8 removed successfully
+16:09:10.322 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=BUILD_SUCCESS, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/16ae40b1e17e14ee3ae20ac211647e47399a01a9/patches/patch1, successful=true]
+16:09:10.323 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Build success in attempt: 1
+16:09:10.436 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:16ae40b1e17e14ee3ae20ac211647e47399a01a9-breaking deleted successfully
+16:09:10.438 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:16ae40b1e17e14ee3ae20ac211647e47399a01a9-pre not found, skipping deletion
+16:09:42.362 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+16:09:42.366 [ForkJoinPool-1-worker-4] INFO  se.kth.Util.StoreInfo - Files differ. Differences saved to: /home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/1820a966ae02ad8df44d0a0106cba65ceaf3aa95/patches/patch1/diffs/EventMessageHandlerTest.java_diff.txt
+16:09:42.409 [ForkJoinPool-1-worker-4] WARN  c.g.d.core.DockerClientBuilder - 'dockerHttpClient' should be set.Falling back to Jersey, will be an error in future releases.
+16:09:42.454 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Created container with ID: 6b861aa98c70531b352542a498000b73c9141ac27f88be3ad905d6ebe1847256
+16:09:43.937 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copied folder to container
+16:09:45.001 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Committed container to create new image: sha256:129c99c9dda69f123d9be120bbd72b382e6e5519c884356aa467c3f90218d8e1
+16:09:45.003 [ForkJoinPool-1-worker-4] ERROR se.kth.DockerBuild - Could not stop container Status 304: null 
+16:09:55.115 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Breaking commit failed in the 1 attempt.
+16:09:55.139 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 9d513e6401a2fbc0febcbecf17c7e26af91fbed87ece9283f05547ed193fe2c7 removed successfully
+16:09:55.142 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=COMPILATION_FAILURE, prefixFiles=1, postfixFiles=1, fixedFiles=0, unfixedFiles=1, newFiles=0, prefixErrors=1, postfixErrors=1, fixedErrors=0, unfixedErrors=1, newErrors=0, outputFolder=/home/iljab/g34/g34-byam-repro/runs/p1/deepseek-deepseek-chat/1820a966ae02ad8df44d0a0106cba65ceaf3aa95/patches/patch1, successful=false]
+16:09:55.393 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1820a966ae02ad8df44d0a0106cba65ceaf3aa95-breaking deleted successfully
+16:09:55.394 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1820a966ae02ad8df44d0a0106cba65ceaf3aa95-pre not found, skipping deletion

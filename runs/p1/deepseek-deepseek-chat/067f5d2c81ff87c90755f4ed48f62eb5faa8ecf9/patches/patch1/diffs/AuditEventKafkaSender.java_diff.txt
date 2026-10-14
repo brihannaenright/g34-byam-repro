@@ -1,0 +1,8 @@
+33a34
+> import org.apache.thrift.transport.TTransportException;
+272c273
+<           } catch (TException e) {
+---
+>           } catch (TException | TTransportException e) {
+433d433
+< 
