@@ -1,0 +1,120 @@
+{
+    "deepseek/deepseek-chat": {
+        "prompt_tokens": 43875,
+        "completion_tokens": 31083,
+        "total_tokens": 74958,
+        "prompt_cost": 0.0061425,
+        "completion_cost": 0.017406480000000002,
+        "total_cost": 0.023548980000000004,
+        "results": [
+            {
+                "prompt_tokens": 4253,
+                "completion_tokens": 2404,
+                "total_tokens": 6657,
+                "prompt_cost": 0.00059542,
+                "completion_cost": 0.0013462400000000003,
+                "total_cost": 0.0019416600000000004,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/10d7545c5771b03dd9f6122bd5973a759eb2cd03/patches/patch1/prompts/Server.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 3765,
+                "completion_tokens": 3169,
+                "total_tokens": 6934,
+                "prompt_cost": 0.0005271000000000001,
+                "completion_cost": 0.00177464,
+                "total_cost": 0.00230174,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/0abf7148300f40a1da0538ab060552bca4a2f1d8/patches/patch1/prompts/ReportBuilder.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 4798,
+                "completion_tokens": 4263,
+                "total_tokens": 9061,
+                "prompt_cost": 0.00067172,
+                "completion_cost": 0.0023872800000000003,
+                "total_cost": 0.003059,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9/patches/patch1/prompts/AuditEventKafkaSender.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 1483,
+                "completion_tokens": 379,
+                "total_tokens": 1862,
+                "prompt_cost": 0.00020762000000000002,
+                "completion_cost": 0.00021224000000000001,
+                "total_cost": 0.00041986000000000004,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/0305beafdecb0b28f7c94264ed20cdc4e41ff067/patches/patch1/prompts/MySqlQueryExceptionHandler.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 5299,
+                "completion_tokens": 3896,
+                "total_tokens": 9195,
+                "prompt_cost": 0.0007418600000000001,
+                "completion_cost": 0.00218176,
+                "total_cost": 0.00292362,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/14fc5fa696f499cac48401b3a86882b3bf7d9b82/patches/patch1/prompts/NisAppConfig.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 4135,
+                "completion_tokens": 3239,
+                "total_tokens": 7374,
+                "prompt_cost": 0.0005789000000000001,
+                "completion_cost": 0.0018138400000000002,
+                "total_cost": 0.0023927400000000004,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/165381d26b2c3d2278fde88c16f95807506451fe/patches/patch1/prompts/DSN.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 1777,
+                "completion_tokens": 604,
+                "total_tokens": 2381,
+                "prompt_cost": 0.00024878000000000004,
+                "completion_cost": 0.00033824,
+                "total_cost": 0.0005870200000000001,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/115827c6675f532a4d33751d1a0c0ba394bbd304/patches/patch1/prompts/J2EHelper.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 1293,
+                "completion_tokens": 409,
+                "total_tokens": 1702,
+                "prompt_cost": 0.00018102,
+                "completion_cost": 0.00022904000000000002,
+                "total_cost": 0.00041006,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/0a11c04038eae517540051dbf51f7f26b7221f20/patches/patch1/prompts/ConfigurationLoader.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 4714,
+                "completion_tokens": 2260,
+                "total_tokens": 6974,
+                "prompt_cost": 0.00065996,
+                "completion_cost": 0.0012656000000000002,
+                "total_cost": 0.0019255600000000002,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/1a2fb9f65e12d6c43a8472b9b035299b29a75ce8/patches/patch1/prompts/ListControlGroups.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 2652,
+                "completion_tokens": 1892,
+                "total_tokens": 4544,
+                "prompt_cost": 0.00037128000000000004,
+                "completion_cost": 0.0010595200000000002,
+                "total_cost": 0.0014308000000000003,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/16ae40b1e17e14ee3ae20ac211647e47399a01a9/patches/patch1/prompts/AllureCommandline.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 4853,
+                "completion_tokens": 4284,
+                "total_tokens": 9137,
+                "prompt_cost": 0.00067942,
+                "completion_cost": 0.0023990400000000003,
+                "total_cost": 0.0030784600000000003,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/1820a966ae02ad8df44d0a0106cba65ceaf3aa95/patches/patch1/prompts/EventMessageHandlerTest.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 4853,
+                "completion_tokens": 4284,
+                "total_tokens": 9137,
+                "prompt_cost": 0.00067942,
+                "completion_cost": 0.0023990400000000003,
+                "total_cost": 0.0030784600000000003,
+                "file_path": "../g34-byam-repro/runs/p8/deepseek-deepseek-chat/07fad972bb884e9fa6143b4f870d08305811607d/patches/patch1/prompts/EventMessageHandlerTest.java_prompt.txt"
+            }
+        ]
+    }
+}
