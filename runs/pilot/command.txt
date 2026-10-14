@@ -1,0 +1,1 @@
+cd ~/g34/bacardi && java -jar core/target/Bump.jar   (started 2026-10-14T13:51:28+01:00)

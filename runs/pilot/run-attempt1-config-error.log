@@ -1,0 +1,7 @@
+13:43:18.135 [main] ERROR se.kth.prompt.GeneratePrompt - Invalid pipeline: 
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at se.kth.Bump.<clinit>(Bump.java:31)
+Caused by: java.lang.IllegalArgumentException: Invalid pipeline: 
+	at se.kth.model.PromptPipeline.fromString(PromptPipeline.java:36)
+	at se.kth.Util.Constants.<clinit>(Constants.java:30)
+	... 1 more
