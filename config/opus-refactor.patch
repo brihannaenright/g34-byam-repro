@@ -1,0 +1,12 @@
+diff --git a/llm/models/anthropic.py b/llm/models/anthropic.py
+index 482dc0d22..cd904e7c1 100644
+--- a/llm/models/anthropic.py
++++ b/llm/models/anthropic.py
+@@ -23,7 +23,6 @@ class AnthropicModel:
+             model=self.model_name,
+             max_tokens=self.max_tokens,
+             messages=[{"role": "user", "content": self.prompt}],
+-            temperature=self.temperature,
+         )
+         if completion:
+             result = completion.content[0].text
