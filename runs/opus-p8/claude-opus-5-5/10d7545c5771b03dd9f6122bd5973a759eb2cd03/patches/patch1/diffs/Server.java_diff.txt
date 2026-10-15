@@ -1,0 +1,15 @@
+48d47
+< import io.dropwizard.client.JerseyClientBuilder;
+62a62
+> import javax.ws.rs.client.ClientBuilder;
+160,164c160,163
+<         return new JerseyClientBuilder(env)
+<                 .using(config.getJerseyClient())
+<                 .withProvider(MultiPartFeature.class)
+<                 .withProvider(JacksonJsonProvider.class)
+<                 .build(getName());
+---
+>         return ClientBuilder.newBuilder()
+>                 .register(MultiPartFeature.class)
+>                 .register(JacksonJsonProvider.class)
+>                 .build();
