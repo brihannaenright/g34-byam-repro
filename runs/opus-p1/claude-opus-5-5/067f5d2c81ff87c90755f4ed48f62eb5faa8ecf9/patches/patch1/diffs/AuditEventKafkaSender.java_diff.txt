@@ -1,0 +1,10 @@
+121c121
+<   private TSerializer serializer = new TSerializer();
+---
+>   private TSerializer serializer;
+185a186,190
+>     try {
+>       this.serializer = new TSerializer();
+>     } catch (TException e) {
+>       throw new RuntimeException("Failed to create TSerializer", e);
+>     }

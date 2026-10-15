@@ -1,0 +1,24 @@
+48d47
+< import io.dropwizard.client.JerseyClientBuilder;
+62a62
+> import javax.ws.rs.client.ClientBuilder;
+160,164c160,172
+<         return new JerseyClientBuilder(env)
+<                 .using(config.getJerseyClient())
+<                 .withProvider(MultiPartFeature.class)
+<                 .withProvider(JacksonJsonProvider.class)
+<                 .build(getName());
+---
+>         ClientBuilder builder = ClientBuilder.newBuilder()
+>                 .register(MultiPartFeature.class)
+>                 .register(JacksonJsonProvider.class);
+>         try {
+>             if (config.getJerseyClient() != null) {
+>                 builder = builder
+>                         .connectTimeout(config.getJerseyClient().getConnectionTimeout().toMilliseconds(), TimeUnit.MILLISECONDS)
+>                         .readTimeout(config.getJerseyClient().getTimeout().toMilliseconds(), TimeUnit.MILLISECONDS);
+>             }
+>         } catch (Exception e) {
+>             Logger.warning("Could not apply jersey client timeouts: %s", e.getMessage());
+>         }
+>         return builder.build();
