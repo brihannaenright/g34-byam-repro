@@ -1,0 +1,3 @@
+# Run from ~/g34 (bump at 324d5513, bacardi at 4bc6b254)
+python3 -I g34-byam-repro/sample/event-a-select.py bump bacardi g34-byam-repro/sample/g34-sample.txt 12 > g34-byam-repro/sample/event-a-selection.tsv
+awk -F'\t' '$11=="yes"{print $2}' g34-byam-repro/sample/event-a-selection.tsv > g34-byam-repro/sample/event-a-sample.txt

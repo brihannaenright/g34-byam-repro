@@ -1,0 +1,80 @@
+order	case	project	dependency	versions	errors	files	structural	qualifies	status	selected	example_structural_error
+1	0305beafdecb0b28f7c94264ed20cdc4e41ff067	pdb	mysql:mysql-connector-java	5.1.49->8.0.28	2	1	0	no	used_in_M2	no
+2	067f5d2c81ff87c90755f4ed48f62eb5faa8ecf9	singer	org.apache.thrift:libthrift	0.12.0->0.16.0	1	1	1	yes	used_in_M2	no	unreported exception org.apache.thrift.transport.TTransportException; must be caught or declared to be thrown
+3	07fad972bb884e9fa6143b4f870d08305811607d	pay-adminusers	ch.qos.logback:logback-classic	1.2.11->1.4.1	1	1	1	yes	used_in_M2	no	cannot access org.slf4j.spi.LoggingEventAware
+4	0a11c04038eae517540051dbf51f7f26b7221f20	simplelocalize-cli	org.yaml:snakeyaml	1.24->2.0	1	1	1	yes	used_in_M2	no	incompatible types: java.lang.Class<io.simplelocalize.cli.configuration.Configuration> cannot be converted to org.yaml.s
+5	0abf7148300f40a1da0538ab060552bca4a2f1d8	biapi	net.sf.jasperreports:jasperreports	6.18.1->6.19.1	1	1	1	yes	used_in_M2	no	incompatible types: int cannot be converted to java.lang.Float
+6	10d7545c5771b03dd9f6122bd5973a759eb2cd03	lithium	io.dropwizard:dropwizard-client	2.1.5->4.0.0	1	1	1	yes	used_in_M2	no	cannot access io.dropwizard.core.setup.Environment
+7	115827c6675f532a4d33751d1a0c0ba394bbd304	dropwizard-pac4j	jakarta.servlet:jakarta.servlet-api	4.0.4->6.0.0	6	1	2	yes	used_in_M2	no	cannot access javax.servlet.Filter
+8	14fc5fa696f499cac48401b3a86882b3bf7d9b82	nem	org.flywaydb:flyway-core	3.2.1->9.21.1	5	1	1	yes	used_in_M2	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+9	165381d26b2c3d2278fde88c16f95807506451fe	scheduler	com.github.javaparser:javaparser-core	3.18.0->3.24.0	2	1	0	no	used_in_M2	no
+10	16ae40b1e17e14ee3ae20ac211647e47399a01a9	allure-maven	net.lingala.zip4j:zip4j	1.3.2->2.11.1	1	1	0	no	used_in_M2	no
+11	1820a966ae02ad8df44d0a0106cba65ceaf3aa95	pay-adminusers	ch.qos.logback:logback-classic	1.2.11->1.4.4	1	1	1	yes	used_in_M2	no	cannot access org.slf4j.spi.LoggingEventAware
+12	1a2fb9f65e12d6c43a8472b9b035299b29a75ce8	wicket-crudifier	jakarta.validation:jakarta.validation-api	2.0.2->3.0.1	16	1	1	yes	used_in_M2	no	cannot access javax.validation.ValidatorFactory
+13	1cc7071371953a7880c2c2c3a5a32c36af7f88f9	assertj-vavr	org.assertj:assertj-core	3.22.0->3.23.0	35	2	0	no	examined	no
+14	1d43bce1de6a81ac017c233d72f348d3c850299e	nem	org.flywaydb:flyway-core	3.2.1->9.15.0	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+15	1e17e176460ab4283e463e62fece844d341da7f0	polyglot-maven	org.yaml:snakeyaml	1.17->2.0	4	3	4	yes	examined	yes	Implicit super constructor Representer() is undefined. Must explicitly invoke another constructor
+16	249c3b394540fde4fcb72f66172af5e02b9c637e	polyglot-maven	org.yaml:snakeyaml	1.17->1.31	1	1	1	yes	same_project_and_dependency_as_used_case	no	Exception IntrospectionException is not compatible with throws clause in Representer.getProperties(Class<? extends Objec
+17	24d4a90ec1b375751e71f33d18949405c9529d77	jcabi-s3	com.jcabi:jcabi-aspects	0.24.1->0.25.1	2	2	0	no	examined	no
+18	250cafc7d6ae47d5d4803b5a5e58186eb81fa3b5	nem	org.flywaydb:flyway-core	3.2.1->9.21.0	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+19	2b4d49d68112941b8abb818549389709d8327963	openfire-hazelcast-plugin	com.hazelcast:hazelcast	3.12.5->4.0.5	24	4	0	no	examined	no
+20	2d733a58045b4bf3669aa00d875e77f9db48c29b	nem	org.flywaydb:flyway-core	3.2.1->9.11.0	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+21	2f01c46b96a8edf437edf20e6dbd848edcb27085	depclean	org.codehaus.plexus:plexus-utils	3.5.1->4.0.0	1	1	0	no	examined	no
+22	3572a1ecc0154c61e05505aed56055b9c5e539a6	singer	org.apache.thrift:libthrift	0.12.0->0.16.0	2	1	0	no	same_project_and_dependency_as_used_case	no
+23	36859167815292f279e570d39dd2ddbcf1622dc6	billy	org.apache.xmlgraphics:fop	1.0->2.2	1	1	1	yes	examined	yes	no suitable method found for newInstance(no arguments)
+24	38c9915f0cfdf0c1a2b17c3c6f283c23a0aac0cf	java-api	org.cactoos:cactoos	0.35->0.55.0	20	8	0	no	examined	no
+25	3d29f9a6823fa68763d3148bc0353ac557f2a815	sorald	org.sonarsource.sonarlint.core:sonarlint-core	8.15.0.65216->9.1.1.74346	1	1	0	no	examined	no
+26	3eb708f53f5f1ce897c3554bb73f5de5698dd171	google-cloud-java	com.google.apis:google-api-services-translate	v2-rev20170525-2.0.0->v3-rev20220805-2.0.0	55	6	3	yes	examined	yes	incompatible types: <anonymous java.util.concurrent.Callable<java.util.List<LanguagesResource>>> cannot be converted to
+27	3f30dfff617fd652412260ecf648a25769a27101	cdi-test	jakarta.interceptor:jakarta.interceptor-api	1.2.5->2.0.0	10	2	0	no	examined	no
+28	3ff575ae202cdf76ddfa8a4228a1711a6fa1e921	plexus-archiver	org.codehaus.plexus:plexus-container-default	1.0-alpha-30->2.1.1	1	1	0	no	examined	no
+29	402082609522c66a3b790aedafd0570148a7d53f	ChangeSkin	org.spongepowered:spongeapi	7.4.0->8.0.0	100	15	0	no	examined	no
+30	43b3a858b77ec27fc8946aba292001c3de465012	pdb	ch.qos.logback:logback-classic	1.2.11->1.4.5	1	1	1	yes	examined	yes	cannot access org.slf4j.spi.LoggingEventAware
+31	43c824a24b09efd8b4b00449ce31cd121a6b23eb	qa-catalogue	de.gwdg.metadataqa:metadata-qa-api	0.8.1->0.9.0	3	1	0	no	examined	no
+32	46979207151a43361447d64afd2658df40033419	billy	org.jvnet.jaxb2_commons:jaxb2-basics-runtime	0.13.1->1.11.1-PUBLISHED-BY-MISTAKE	100	45	0	no	examined	no
+33	489aad6060454d0b7b34a144e0b345c5a3a199f5	nem	org.flywaydb:flyway-core	3.2.1->9.19.1	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+34	4a3efad6e00824e5814b9c8f571c9c98aad40281	open-pdf-sign	eu.europa.ec.joinup.sd-dss:dss-pades	5.9->5.10.2	1	1	0	no	examined	no
+35	4aab2869639226035c999c282f31efba15648ea3	http	com.artipie:asto-core	v1.13.0->v1.15.3	2	1	0	no	examined	no
+36	4b4c08d502d98d240855013ab76008f5e0243435	nem	org.flywaydb:flyway-core	3.2.1->9.15.1	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+37	4bba3fb6147e72946f64724fe55eee5d15ff6206	cdi-test	jakarta.annotation:jakarta.annotation-api	1.3.5->2.0.0	2	1	0	no	examined	no
+38	500d9c021d34b307b1a70d3f29fb7f9b5ab9d1a6	jakartaee-mvc-sample	jakarta.mvc:jakarta.mvc-api	1.1.0->2.0.1	57	10	0	no	examined	no
+39	54857351e0b0a655970d7e2ccdb67f175cc5d688	allure-maven	net.lingala.zip4j:zip4j	1.3.2->2.10.0	1	1	0	no	same_project_and_dependency_as_used_case	no
+40	54abbbde6a1233e1523a9b5f811ea100efb5dead	jcabi-ssh	com.jcabi:jcabi-aspects	0.24.1->0.25.1	4	2	0	no	examined	no
+41	5769bdad76925da568294cb8a40e7d4469699ac3	incrementals-tools	org.kohsuke:github-api	1.93->1.313	1	1	1	yes	examined	yes	status has private access in org.kohsuke.github.GHCompare
+42	5adde4f1309a1078b39d013a30dc392c97ca7543	sorald	org.sonarsource.sonarlint.core:sonarlint-core	8.15.0.65216->9.1.0.74321	1	1	0	no	examined	no
+43	5cf5a482bd430d81257b4ecd85b3d4f7da911621	jakartaee-mvc-sample	jakarta.mvc:jakarta.mvc-api	1.1.0->2.0.1	57	10	0	no	examined	no
+44	5fcd0c3ad7727850c47602b17530dc355e5bd097	pitest-mutation-testing-elements-plugin	org.pitest:pitest-entry	1.9.11->1.10.0	1	1	0	no	examined	no
+45	61e96bfe3a32d6ef2e5d7912a518c78bd5474e74	singer	ch.qos.logback:logback-core	1.1.11->1.2.9	4	1	4	yes	examined	yes	com.pinterest.singer.client.logback.AppenderUtils.LogMessageEncoder is not abstract and does not override abstract metho
+46	65200df71d5f6ab1c5502f74a5dc7bcbda459563	sorald	org.sonarsource.sonarlint.core:sonarlint-core	8.15.0.65216->8.19.0.72745	1	1	0	no	examined	no
+47	6ac25d3a60ea29a41a37ad47b7feb2908ee84fff	myfaces-tobago	jakarta.servlet:jakarta.servlet-api	5.0.0->6.0.0	2	1	0	no	examined	no
+48	6ad104c4fb9263ad1bb29e6b33618b8225efd92d	HAP-Java	org.bouncycastle:bcprov-jdk15on	1.51->1.67	4	1	0	no	examined	no
+49	6c53cd904bd66fc79af8687571e607c259226b81	guice	org.apache.struts:struts2-core	2.3.37->2.5.26	3	1	0	no	examined	no
+50	741f3b5e20a91b0e9305ae79261e3c5e64971c98	simplelocalize-cli	com.fasterxml.jackson.core:jackson-databind	2.9.10.5->2.13.4.1	1	1	1	yes	examined	yes	cannot access com.fasterxml.jackson.core.exc.StreamReadException
+51	7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b	onebusaway-gtfs-modules	org.hibernate:hibernate-core	4.0.1.Final->5.4.24.Final	3	1	3	yes	examined	yes	org.onebusaway.gtfs.impl.ServiceDateUserType is not abstract and does not override abstract method nullSafeSet(java.sql.
+52	7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8	google-cloud-java	com.google.apis:google-api-services-dns	v1-rev20220804-2.0.0->v2-rev20220505-1.32.1	9	1	9	yes	examined	yes	method create in class com.google.api.services.dns.Dns.ManagedZones cannot be applied to given types;
+53	7d97e1c7331f6722eb1d8192bf0a2686f5a33798	jcabi-simpledb	com.jcabi:jcabi-aspects	0.24.1->0.25.1	1	1	0	no	examined	no
+54	7f7de81d28b68b091bef2e6f6ffd1836167be6ea	snmpman	org.snmp4j:snmp4j-agent	3.0.3->3.6.6	1	1	1	yes	examined	yes	incompatible types: java.util.SortedMap<org.snmp4j.agent.MOScope,org.snmp4j.agent.ManagedObject<?>> cannot be converted
+55	832e0f184efdad0fcf15d14cb7af5e30239ff454	WorldwideChat	com.github.cryptomorin:XSeries	8.5.0.1->8.6.0	16	6	0	no	examined	no
+56	83a25390887d8afa7d43b70070d710da3c90a7a6	facebook-java-business-sdk	com.squareup.okio:okio	2.1.0->3.4.0	0	0	0	no	excluded_no_java_source_errors	no
+57	8436e73fa0c913774d9792fc986c74309765ab61	billy	jakarta.jws:jakarta.jws-api	2.1.0->3.0.0	77	2	0	no	examined	no
+58	8502e85f9ee2ff90ce96b47b5904f011e81e8bb8	nem	org.flywaydb:flyway-core	3.2.1->9.20.1	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+59	867e69e208ff59d1f8baae7ed41d3e163a51bc65	singer	org.apache.thrift:libthrift	0.12.0->0.16.0	4	2	0	no	same_project_and_dependency_as_used_case	no
+60	88a20ece4db960e35fbfa39fcb40e61daceb15b1	java-pubsub-group-kafka-connector	com.google.cloud:google-cloud-pubsublite	0.6.0->1.6.3	7	3	1	yes	examined	yes	incompatible types: com.google.cloud.pubsublite.internal.wire.PartitionPublisherFactory is not a functional interface
+61	88c1f903cede03ff371059cdaf009dab12007043	allure-maven	net.lingala.zip4j:zip4j	1.3.2->2.11.0	1	1	0	no	same_project_and_dependency_as_used_case	no
+62	90ffd2cd31edecf778d14d0015da9ceab7e53081	pay-adminusers	ch.qos.logback:logback-classic	1.2.11->1.4.0	1	1	1	yes	same_project_and_dependency_as_used_case	no	cannot access org.slf4j.spi.LoggingEventAware
+63	9218cc9c8e0018d01e2d7cfe0e77aae7b65b378f	wicket-crudifier	jakarta.validation:jakarta.validation-api	2.0.2->3.0.2	16	1	1	yes	same_project_and_dependency_as_used_case	no	cannot access javax.validation.ValidatorFactory
+64	923a6b2027e3ca1762deb6a60fc0a768c284122b	jcabi-http	org.hamcrest:hamcrest-library	1.3->2.2	2	2	0	no	examined	no
+65	9461431622cf39efe60cf1eb03a94083780c5720	snmpman	org.snmp4j:snmp4j-agent	3.0.3->3.6.5	1	1	1	yes	same_project_and_dependency_as_used_case	no	incompatible types: java.util.SortedMap<org.snmp4j.agent.MOScope,org.snmp4j.agent.ManagedObject<?>> cannot be converted
+66	9545eb3a2687afc77b0a7da4d5d621807618d95c	openfire-hazelcast-plugin	com.hazelcast:hazelcast	3.12.5->5.1	24	4	0	no	examined	no
+67	9717e34bcda74bd9ad94f6a52ddfd3fd179ea15b	jcabi-github	com.jcabi:jcabi-aspects	0.24.1->0.25.1	1	1	0	no	examined	no
+68	979d6237a50840cd925cc1a33c415ffbbbc42846	guice	org.apache.struts:struts2-core	2.3.37->2.5.30	3	1	0	no	examined	no
+69	9a8b6fc7847a0782ae4c48d0e4f7056507c0397d	geostore	org.jasypt:jasypt	1.8->1.9.2	7	2	0	no	examined	no
+70	a26797cdeeecaa3b900ea1e0d5ec0cec66bf03ff	pay-adminusers	ch.qos.logback:logback-classic	1.2.11->1.4.8	1	1	1	yes	same_project_and_dependency_as_used_case	no	cannot access org.slf4j.spi.LoggingEventAware
+71	a2b0fc53611f8705640773f18c8dd6a47eed3b7f	nem	org.flywaydb:flyway-core	3.2.1->9.19.4	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+72	a4c360001134c2e3a9f7fbde88a07a9fd767e78e	gauge-java	org.reflections:reflections	0.9.9->0.10.2	2	1	0	no	examined	no
+73	a80dac86d1caa3958c45c036d93a7d9231d88fbf	pay-adminusers	ch.qos.logback:logback-classic	1.2.11->1.4.3	1	1	1	yes	same_project_and_dependency_as_used_case	no	cannot access org.slf4j.spi.LoggingEventAware
+74	a9df7b2235224fcabefa1d62e8956911aa5bb825	polyglot-maven	org.yaml:snakeyaml	1.17->1.32	1	1	1	yes	same_project_and_dependency_as_used_case	no	Exception IntrospectionException is not compatible with throws clause in Representer.getProperties(Class<? extends Objec
+75	acc50dabec6796c091b84c1ada2ae4cbcab8b562	guice	org.apache.struts:struts2-core	2.3.37->2.5.22	3	1	0	no	examined	no
+76	ad80bdff62b1b0520d3fb9e8d627532a38a7c60c	nem	org.flywaydb:flyway-core	3.2.1->9.16.3	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+77	ae16b526695fe275ab5e6a1992916875d26da860	jadler	org.eclipse.jetty:jetty-server	8.1.11.v20130520->9.4.41.v20210516	6	1	0	no	examined	no
+78	af6e5d1cc94f031f29b4838e7a8b56704c8c5de4	nem	org.flywaydb:flyway-core	3.2.1->9.17.0	5	1	1	yes	same_project_and_dependency_as_used_case	no	constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;
+79	b1a941400d68445d76056ab8833cd6d2e3455954	fluxtion	org.yaml:snakeyaml	1.33->2.0	2	1	2	yes	examined	yes	no suitable constructor found for Constructor(no arguments)
