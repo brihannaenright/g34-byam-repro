@@ -1,0 +1,1591 @@
+15:21:17.485 [main] INFO  se.kth.Bump - 
+15:21:17.490 [main] INFO  se.kth.Bump - |------------------------------------------------------------------|
+15:21:17.490 [main] INFO  se.kth.Bump - | Bump analysis started. PIPELINE: BASELINE MODEL: claude-opus-5-5 |
+15:21:17.491 [main] INFO  se.kth.Bump - |------------------------------------------------------------------|
+15:21:17.491 [main] INFO  se.kth.Bump - 
+15:21:17.491 [main] INFO  se.kth.Bump - Filtering breaking dependency updates
+15:21:17.491 [main] INFO  se.kth.Bump - 
+15:21:18.287 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+15:21:18.288 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.288 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 43b3a858b77ec27fc8946aba292001c3de465012 |
+15:21:18.288 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.288 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+15:21:18.288 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+15:21:18.288 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:21:18.288 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.288 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.288 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - | Processing breaking update: 1e17e176460ab4283e463e62fece844d341da7f0 |
+15:21:18.288 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b |
+15:21:18.288 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.288 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+15:21:18.288 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.288 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:21:18.289 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+15:21:18.289 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.289 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 7f7de81d28b68b091bef2e6f6ffd1836167be6ea |
+15:21:18.289 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:18.289 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+15:21:18.404 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking
+15:21:18.404 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking
+15:21:18.405 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking ...
+15:21:18.404 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking
+15:21:18.405 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking ...
+15:21:18.405 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking ...
+15:21:18.405 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking
+15:21:18.405 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking ...
+15:21:22.291 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking
+15:21:22.951 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+15:21:22.952 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 7f7de81d28b68b091bef2e6f6ffd1836167be6ea from container to local path
+15:21:23.052 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 7f7de81d28b68b091bef2e6f6ffd1836167be6ea copied successfully
+15:21:23.923 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 3ba72b62123691dc8e12021ef72c59107c6fdb2b1a70d8235871a29927a31c34 removed successfully
+15:21:23.985 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/snmp4j/snmp4j-agent/3.6.6/snmp4j-agent-3.6.6.jar copied successfully
+15:21:23.997 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: e7e455c34cdd2138bee57debd8c8654381865362a9881c211b705bf23602fb76 removed successfully
+15:21:24.284 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+15:21:24.572 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+15:21:24.581 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:21:24.645 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:21:24.650 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breakingBase Maven image exists.
+15:21:24.660 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:21:24.665 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /snmpman/snmpman/src/main/java/com/oneandone/snmpman/SnmpmanAgent.java
+15:21:24.670 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:21:24.671 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:21:24.672 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:21:36.101 [ForkJoinPool-1-worker-4] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:21:36.102 [ForkJoinPool-1-worker-4] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:21:36.110 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/7f7de81d28b68b091bef2e6f6ffd1836167be6ea/patches/patch1, successful=false]
+15:21:36.233 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking deleted successfully
+15:21:36.236 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-pre not found, skipping deletion
+15:21:36.237 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+15:21:36.237 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:36.237 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: b1a941400d68445d76056ab8833cd6d2e3455954 |
+15:21:36.237 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:36.237 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+15:21:36.240 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking
+15:21:36.240 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking ...
+15:21:47.395 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking
+15:21:47.737 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+15:21:47.737 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 43b3a858b77ec27fc8946aba292001c3de465012 from container to local path
+15:21:47.812 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 43b3a858b77ec27fc8946aba292001c3de465012 copied successfully
+15:21:48.331 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 662e8c1e1f509298fcef8961c6a8905319f66a4abffc2d764112478d3dbdb1af removed successfully
+15:21:48.342 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar copied successfully
+15:21:48.350 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: b466d4e50dc18435c693e364b5cc4cbd260df6fd089ba844a8e0ac497a88f69e removed successfully
+15:21:48.361 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+15:21:48.508 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+15:21:48.508 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:21:48.583 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:21:48.585 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breakingBase Maven image exists.
+15:21:48.587 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:21:48.588 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /pdb/src/test/java/com/feedzai/commons/sql/abstraction/engine/impl/abs/EngineGeneralTest.java
+15:21:48.588 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:21:48.588 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:21:48.589 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:21:53.514 [ForkJoinPool-1-worker-1] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:21:53.514 [ForkJoinPool-1-worker-1] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:21:53.515 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/43b3a858b77ec27fc8946aba292001c3de465012/patches/patch1, successful=false]
+15:21:53.563 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking deleted successfully
+15:21:53.565 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-pre not found, skipping deletion
+15:21:53.565 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+15:21:53.565 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:53.565 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 5769bdad76925da568294cb8a40e7d4469699ac3 |
+15:21:53.565 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:21:53.565 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+15:21:53.566 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking
+15:21:53.567 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking ...
+15:22:02.827 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking
+15:22:03.222 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+15:22:03.223 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b from container to local path
+15:22:03.334 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b copied successfully
+15:22:03.980 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 8ec79482054f9e2f4c4ae754b8a760f1388eb9588031f01370e920d4e7032a66 removed successfully
+15:22:04.181 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/hibernate/hibernate-core/5.4.24.Final/hibernate-core-5.4.24.Final.jar copied successfully
+15:22:04.211 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 80f4dc15cdfb8dd86440d62d20c3aada50465c6c260eb486dcc1b00fb0ef1573 removed successfully
+15:22:04.253 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+15:22:04.515 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+15:22:04.515 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:22:04.627 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:22:04.629 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breakingBase Maven image exists.
+15:22:04.632 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:22:04.634 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /onebusaway-gtfs-modules/onebusaway-gtfs-hibernate/src/main/java/org/onebusaway/gtfs/impl/ServiceDateUserType.java
+15:22:04.635 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:22:04.635 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:22:04.635 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+15:22:06.680 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking
+15:22:07.041 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - 
+15:22:07.041 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copying folder 1e17e176460ab4283e463e62fece844d341da7f0 from container to local path
+15:22:08.338 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Folder 1e17e176460ab4283e463e62fece844d341da7f0 copied successfully
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:22:08.688 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:22:08.688 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:22:08.689 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=3, postfixErrors=0, fixedErrors=3, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b/patches/patch1, successful=false]
+15:22:08.832 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking deleted successfully
+15:22:08.834 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-pre not found, skipping deletion
+15:22:08.835 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:22:08.835 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:22:08.835 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 3eb708f53f5f1ce897c3554bb73f5de5698dd171 |
+15:22:08.835 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:22:08.835 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:22:08.838 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking
+15:22:08.838 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking ...
+15:22:08.942 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 608f0f4cadbf5fd56a6e467c25cb3f8399717e824960281f72f5a282a8aeff4a removed successfully
+15:22:08.968 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar copied successfully
+15:22:08.980 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 99ab5532eb8651a94e76084a034d7869d7962c556b152fbf9103120f7c86b658 removed successfully
+15:22:09.025 [ForkJoinPool-1-worker-3] ERROR se.kth.GitManager - Repository HEAD is null
+15:22:09.497 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch original_status created
+15:22:09.497 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:22:09.656 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:22:09.659 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breakingBase Maven image exists.
+15:22:09.663 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 3
+15:22:09.665 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - File: /polyglot-maven/polyglot-yaml/src/main/java/org/sonatype/maven/polyglot/yaml/ModelConstructor.java
+15:22:09.665 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:22:09.665 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:22:09.665 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:22:15.224 [ForkJoinPool-1-worker-3] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:22:15.225 [ForkJoinPool-1-worker-3] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:22:15.225 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=3, postfixFiles=0, fixedFiles=3, unfixedFiles=0, newFiles=0, prefixErrors=4, postfixErrors=0, fixedErrors=4, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/1e17e176460ab4283e463e62fece844d341da7f0/patches/patch1, successful=false]
+15:22:15.499 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking deleted successfully
+15:22:15.502 [ForkJoinPool-1-worker-3] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-pre not found, skipping deletion
+15:22:15.502 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+15:22:15.502 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:22:15.502 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - | Processing breaking update: 88a20ece4db960e35fbfa39fcb40e61daceb15b1 |
+15:22:15.502 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:22:15.502 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+15:22:15.504 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking
+15:22:15.504 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking ...
+15:22:18.711 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking
+15:22:19.067 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+15:22:19.068 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder b1a941400d68445d76056ab8833cd6d2e3455954 from container to local path
+15:22:19.246 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder b1a941400d68445d76056ab8833cd6d2e3455954 copied successfully
+15:22:19.943 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: e78c89c8ad6f5d14b18685f53bac174175a5dd017916dc4130b09c35e7d14093 removed successfully
+15:22:19.961 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar copied successfully
+15:22:19.971 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: a48299eac61a16c57734ecc751db2cd65fdaa124ebc08c923ac78d826d094f40 removed successfully
+15:22:20.007 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+15:22:20.454 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+15:22:20.454 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:22:20.617 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:22:20.620 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breakingBase Maven image exists.
+15:22:20.622 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:22:20.626 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /fluxtion/compiler/src/test/java/com/fluxtion/compiler/builder/factory/GraphOfInstancesTest.java
+15:22:20.626 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:22:20.626 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:22:20.627 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:22:24.426 [ForkJoinPool-1-worker-4] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:22:24.427 [ForkJoinPool-1-worker-4] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:22:24.427 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=2, postfixErrors=0, fixedErrors=2, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/b1a941400d68445d76056ab8833cd6d2e3455954/patches/patch1, successful=false]
+15:22:24.557 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking deleted successfully
+15:22:24.559 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-pre not found, skipping deletion
+15:22:24.559 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+15:22:24.559 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:22:24.559 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8 |
+15:22:24.559 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:22:24.559 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+15:22:24.561 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking
+15:22:24.561 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking ...
+15:22:27.631 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking
+15:22:27.969 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+15:22:27.969 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 5769bdad76925da568294cb8a40e7d4469699ac3 from container to local path
+15:22:27.988 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 5769bdad76925da568294cb8a40e7d4469699ac3 copied successfully
+15:22:28.619 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: ff5888466d9e7e1e63579f3dcc4f5c61090c7cdee7c47d21c3b8427732f6cea0 removed successfully
+15:22:28.640 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/kohsuke/github-api/1.313/github-api-1.313.jar copied successfully
+15:22:28.649 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: bbe48c0750d4c6c89d14aff6e65665f56a3f60cb6abfd1c5bf7071c8bcee9ea0 removed successfully
+15:22:28.671 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+15:22:28.715 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+15:22:28.715 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:22:28.734 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:22:28.736 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breakingBase Maven image exists.
+15:22:28.737 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:22:28.738 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /incrementals-tools/lib/src/main/java/io/jenkins/tools/incrementals/lib/UpdateChecker.java
+15:22:28.738 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:22:28.738 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:22:28.739 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:22:36.852 [ForkJoinPool-1-worker-1] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:22:36.853 [ForkJoinPool-1-worker-1] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:22:36.854 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/5769bdad76925da568294cb8a40e7d4469699ac3/patches/patch1, successful=false]
+15:22:36.924 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking deleted successfully
+15:22:36.926 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-pre not found, skipping deletion
+15:23:27.069 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking
+15:23:27.659 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - 
+15:23:27.659 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copying folder 88a20ece4db960e35fbfa39fcb40e61daceb15b1 from container to local path
+15:23:27.702 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Folder 88a20ece4db960e35fbfa39fcb40e61daceb15b1 copied successfully
+15:23:28.520 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: d11d5435ff9fad5927ae1fd192d2c37ab956e1813bc73b2b9b7a372e48e77647 removed successfully
+15:23:28.539 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/google/cloud/google-cloud-pubsublite/1.6.3/google-cloud-pubsublite-1.6.3.jar copied successfully
+15:23:28.557 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 024a4cc19c895bf5078d8ca889f61567a0accb54b4f1fa7e8febf76abadc1507 removed successfully
+15:23:28.585 [ForkJoinPool-1-worker-3] ERROR se.kth.GitManager - Repository HEAD is null
+15:23:28.657 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch original_status created
+15:23:28.657 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:23:28.681 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:23:28.683 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breakingBase Maven image exists.
+15:23:28.684 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 3
+15:23:28.685 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - File: /java-pubsub-group-kafka-connector/src/main/java/com/google/pubsublite/kafka/sink/PublisherFactoryImpl.java
+15:23:28.685 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:23:28.685 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:23:28.686 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:23:35.534 [ForkJoinPool-1-worker-3] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:23:35.534 [ForkJoinPool-1-worker-3] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:23:35.535 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=3, postfixFiles=0, fixedFiles=3, unfixedFiles=0, newFiles=0, prefixErrors=7, postfixErrors=0, fixedErrors=7, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/88a20ece4db960e35fbfa39fcb40e61daceb15b1/patches/patch1, successful=false]
+15:23:35.626 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking deleted successfully
+15:23:35.628 [ForkJoinPool-1-worker-3] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-pre not found, skipping deletion
+15:31:40.784 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking
+15:31:43.252 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+15:31:43.252 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8 from container to local path
+15:32:34.336 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking
+15:32:35.892 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+15:32:35.893 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 3eb708f53f5f1ce897c3554bb73f5de5698dd171 from container to local path
+15:33:05.764 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8 copied successfully
+15:33:07.521 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: e607f1d4fe26daa062f4f99df97bef70419703a30714255f80132d5399d9f9a3 removed successfully
+15:33:07.538 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/google/apis/google-api-services-dns/v2-rev20220505-1.32.1/google-api-services-dns-v2-rev20220505-1.32.1.jar copied successfully
+15:33:07.573 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 1de77d656e9e81b881bf8bddaac57b25174b738f648cd8b86894c310a1ddc841 removed successfully
+15:33:07.911 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+15:34:24.002 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 3eb708f53f5f1ce897c3554bb73f5de5698dd171 copied successfully
+15:34:25.789 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: d8e6588490290dcffc220d49eaf47501a8bbf868e4df7337cc10c84f8137bbc4 removed successfully
+15:34:25.825 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/google/apis/google-api-services-translate/v3-rev20220805-2.0.0/google-api-services-translate-v3-rev20220805-2.0.0.jar copied successfully
+15:34:25.842 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 97fbbf603c0fa65ce61cd6099c7fb44e45f61bbb9cb8cccc0aa0c959ef113f13 removed successfully
+15:34:26.348 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+15:34:26.351 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:34:26.376 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+15:35:09.963 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:35:09.968 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breakingBase Maven image exists.
+15:35:09.985 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:35:09.993 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /google-cloud-java/java-dns/src/main/java/com/google/cloud/dns/spi/v1/HttpDnsRpc.java
+15:35:09.996 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:35:09.996 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:35:10.000 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:35:17.201 [ForkJoinPool-1-worker-4] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:35:17.203 [ForkJoinPool-1-worker-4] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:35:17.218 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=9, postfixErrors=0, fixedErrors=9, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8/patches/patch1, successful=false]
+15:35:22.597 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+15:35:22.597 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:35:31.051 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking deleted successfully
+15:35:31.056 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-pre not found, skipping deletion
+15:36:01.661 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:36:01.671 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breakingBase Maven image exists.
+15:36:01.697 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 6
+15:36:01.703 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /google-cloud-java/java-translate/google-cloud-translate/src/main/java/com/google/cloud/translate/TranslateImpl.java
+15:36:01.704 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:36:01.704 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:36:01.704 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:36:06.394 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:36:06.394 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:36:06.396 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=6, postfixFiles=0, fixedFiles=6, unfixedFiles=0, newFiles=0, prefixErrors=50, postfixErrors=0, fixedErrors=50, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/3eb708f53f5f1ce897c3554bb73f5de5698dd171/patches/patch1, successful=false]
+15:36:19.466 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking deleted successfully
+15:36:19.471 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-pre not found, skipping deletion
+15:36:19.471 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:36:19.471 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:36:19.471 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 36859167815292f279e570d39dd2ddbcf1622dc6 |
+15:36:19.471 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:36:19.471 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:36:19.474 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking
+15:36:19.474 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking ...
+15:36:30.131 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking
+15:36:30.786 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+15:36:30.787 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 36859167815292f279e570d39dd2ddbcf1622dc6 from container to local path
+15:36:31.005 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 36859167815292f279e570d39dd2ddbcf1622dc6 copied successfully
+15:36:31.856 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: a7a558e42f84add8700e8c21a68912be3374624dee286555e096a82f2db18584 removed successfully
+15:36:32.048 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/apache/xmlgraphics/fop/2.2/fop-2.2.jar copied successfully
+15:36:32.108 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 0b69989bd229ace6c43a36605581b24cc6a32b75581cb9e18e476341c714fe87 removed successfully
+15:36:32.136 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+15:36:32.854 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+15:36:32.854 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:36:33.037 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:36:33.044 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breakingBase Maven image exists.
+15:36:33.046 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:36:33.048 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /billy/billy-gin/src/main/java/com/premiumminds/billy/gin/services/impl/pdf/FOPPDFTransformer.java
+15:36:33.048 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:36:33.048 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:36:33.048 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:36:36.490 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:36:36.490 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:36:36.491 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/36859167815292f279e570d39dd2ddbcf1622dc6/patches/patch1, successful=false]
+15:36:36.710 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking deleted successfully
+15:36:36.713 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-pre not found, skipping deletion
+15:36:36.713 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:36:36.713 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:36:36.713 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 741f3b5e20a91b0e9305ae79261e3c5e64971c98 |
+15:36:36.713 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:36:36.713 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:36:36.716 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking
+15:36:36.717 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking ...
+15:36:51.978 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking
+15:36:52.582 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+15:36:52.583 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 741f3b5e20a91b0e9305ae79261e3c5e64971c98 from container to local path
+15:36:52.682 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 741f3b5e20a91b0e9305ae79261e3c5e64971c98 copied successfully
+15:36:53.572 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: a75402665b54ee4eb793e8de24c499555d6559f4335e10ee89c122a038bcd4f2 removed successfully
+15:36:53.655 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4.1/jackson-databind-2.13.4.1.jar copied successfully
+15:36:53.682 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: d726f995d61b9896f9ff6b05f165d2a0f3b80c54eed869d9eb347e87d273a2c0 removed successfully
+15:36:53.730 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+15:36:53.897 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+15:36:53.897 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:36:53.959 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:36:53.963 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breakingBase Maven image exists.
+15:36:53.965 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:36:53.967 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /simplelocalize-cli/src/main/java/io/simplelocalize/cli/client/SimpleLocalizeClient.java
+15:36:53.967 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:36:53.967 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:36:53.967 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:36:58.674 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:36:58.674 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:36:58.676 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/741f3b5e20a91b0e9305ae79261e3c5e64971c98/patches/patch1, successful=false]
+15:36:58.852 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking deleted successfully
+15:36:58.855 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-pre not found, skipping deletion
+15:36:58.855 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:36:58.855 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:36:58.856 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 61e96bfe3a32d6ef2e5d7912a518c78bd5474e74 |
+15:36:58.856 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+15:36:58.856 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+15:36:58.857 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking
+15:36:58.858 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking ...
+15:37:11.213 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking
+15:37:11.751 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+15:37:11.751 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 61e96bfe3a32d6ef2e5d7912a518c78bd5474e74 from container to local path
+15:37:12.209 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 61e96bfe3a32d6ef2e5d7912a518c78bd5474e74 copied successfully
+15:37:13.089 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: c8ddeb3ff8583308cc2b100e05eebcb3a24037e829c03e5c654b923230147a11 removed successfully
+15:37:13.125 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar copied successfully
+15:37:13.145 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 5acbc90fadd7219f0272ee5649dc3517ac9d6c9a2dbbdea32732040c05a7fb53 removed successfully
+15:37:13.172 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+15:37:13.410 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+15:37:13.410 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+15:37:13.505 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+15:37:13.509 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breakingBase Maven image exists.
+15:37:13.512 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+15:37:13.514 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /singer/thrift-logger/src/main/java/com/pinterest/singer/client/logback/AppenderUtils.java
+15:37:13.514 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+15:37:13.514 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+15:37:13.514 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/francis/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1436, in _attempt_request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/call_llm.py", line 39, in init_anthropic
+    return model_response._generate_response()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/g34/bacardi/llm/models/anthropic.py", line 22, in _generate_response
+    completion = self.client.messages.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py", line 1045, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1676, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1227, in request
+    return self._request(cast_to, options, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1261, in _request
+    response, prepared = self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/francis/byam-venv/lib/python3.12/site-packages/anthropic/_base_client.py", line 1450, in _attempt_request
+    raise APIConnectionError(request=request) from err
+anthropic.APIConnectionError: Connection error.
+
+15:37:17.750 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+15:37:17.750 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+15:37:17.751 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=4, postfixErrors=0, fixedErrors=4, unfixedErrors=0, newErrors=0, outputFolder=/home/francis/g34/g34-byam-repro/runs/event-a-opus-p1/claude-opus-5-5/61e96bfe3a32d6ef2e5d7912a518c78bd5474e74/patches/patch1, successful=false]
+15:37:17.880 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking deleted successfully
+15:37:17.883 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-pre not found, skipping deletion
