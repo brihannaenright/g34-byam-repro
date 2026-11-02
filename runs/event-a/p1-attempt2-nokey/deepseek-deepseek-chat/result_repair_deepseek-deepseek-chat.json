@@ -1,0 +1,242 @@
+{
+  "88a20ece4db960e35fbfa39fcb40e61daceb15b1" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 3,
+      "postfixFiles" : 0,
+      "fixedFiles" : 3,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 7,
+      "postfixErrors" : 0,
+      "fixedErrors" : 7,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/88a20ece4db960e35fbfa39fcb40e61daceb15b1/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "7f7de81d28b68b091bef2e6f6ffd1836167be6ea" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 1,
+      "postfixErrors" : 0,
+      "fixedErrors" : 1,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/7f7de81d28b68b091bef2e6f6ffd1836167be6ea/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "5769bdad76925da568294cb8a40e7d4469699ac3" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 1,
+      "postfixErrors" : 0,
+      "fixedErrors" : 1,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/5769bdad76925da568294cb8a40e7d4469699ac3/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "61e96bfe3a32d6ef2e5d7912a518c78bd5474e74" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 4,
+      "postfixErrors" : 0,
+      "fixedErrors" : 4,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/61e96bfe3a32d6ef2e5d7912a518c78bd5474e74/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "b1a941400d68445d76056ab8833cd6d2e3455954" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 2,
+      "postfixErrors" : 0,
+      "fixedErrors" : 2,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/b1a941400d68445d76056ab8833cd6d2e3455954/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "1e17e176460ab4283e463e62fece844d341da7f0" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 3,
+      "postfixFiles" : 0,
+      "fixedFiles" : 3,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 4,
+      "postfixErrors" : 0,
+      "fixedErrors" : 4,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/1e17e176460ab4283e463e62fece844d341da7f0/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 9,
+      "postfixErrors" : 0,
+      "fixedErrors" : 9,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "43b3a858b77ec27fc8946aba292001c3de465012" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 1,
+      "postfixErrors" : 0,
+      "fixedErrors" : 1,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/43b3a858b77ec27fc8946aba292001c3de465012/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "36859167815292f279e570d39dd2ddbcf1622dc6" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 1,
+      "postfixErrors" : 0,
+      "fixedErrors" : 1,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/36859167815292f279e570d39dd2ddbcf1622dc6/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "741f3b5e20a91b0e9305ae79261e3c5e64971c98" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 1,
+      "postfixErrors" : 0,
+      "fixedErrors" : 1,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/741f3b5e20a91b0e9305ae79261e3c5e64971c98/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "3eb708f53f5f1ce897c3554bb73f5de5698dd171" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 6,
+      "postfixFiles" : 0,
+      "fixedFiles" : 6,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 50,
+      "postfixErrors" : 0,
+      "fixedErrors" : 50,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/3eb708f53f5f1ce897c3554bb73f5de5698dd171/patches/patch1",
+      "successful" : false
+    } ]
+  },
+  "7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b" : {
+    "breakingCommit" : null,
+    "originalFailureCategory" : "COMPILATION_FAILURE",
+    "attempts" : [ {
+      "index" : 1,
+      "failureCategory" : "ERROR_MODEL_RESPONSE",
+      "prefixFiles" : 1,
+      "postfixFiles" : 0,
+      "fixedFiles" : 1,
+      "unfixedFiles" : 0,
+      "newFiles" : 0,
+      "prefixErrors" : 3,
+      "postfixErrors" : 0,
+      "fixedErrors" : 3,
+      "unfixedErrors" : 0,
+      "newErrors" : 0,
+      "outputFolder" : "/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b/patches/patch1",
+      "successful" : false
+    } ]
+  }
+}

@@ -1,0 +1,691 @@
+16:18:31.901 [main] INFO  se.kth.Bump - 
+16:18:31.902 [main] INFO  se.kth.Bump - |-------------------------------------------------------------------------|
+16:18:31.902 [main] INFO  se.kth.Bump - | Bump analysis started. PIPELINE: BASELINE MODEL: deepseek/deepseek-chat |
+16:18:31.902 [main] INFO  se.kth.Bump - |-------------------------------------------------------------------------|
+16:18:31.902 [main] INFO  se.kth.Bump - 
+16:18:31.902 [main] INFO  se.kth.Bump - Filtering breaking dependency updates
+16:18:31.902 [main] INFO  se.kth.Bump - 
+16:18:32.170 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 741f3b5e20a91b0e9305ae79261e3c5e64971c98 |
+16:18:32.171 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 5769bdad76925da568294cb8a40e7d4469699ac3 |
+16:18:32.171 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 7f7de81d28b68b091bef2e6f6ffd1836167be6ea |
+16:18:32.171 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:18:32.171 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - | Processing breaking update: 7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8 |
+16:18:32.171 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:18:32.171 [ForkJoinPool-1-worker-3] INFO  se.kth.Bump - 
+16:18:32.208 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking
+16:18:32.208 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking ...
+16:18:32.208 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking
+16:18:32.208 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking ...
+16:18:32.208 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking
+16:18:32.208 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking ...
+16:18:32.208 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking
+16:18:32.208 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking ...
+16:18:57.427 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking
+16:18:57.929 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:18:57.930 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 5769bdad76925da568294cb8a40e7d4469699ac3 from container to local path
+16:18:57.962 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 5769bdad76925da568294cb8a40e7d4469699ac3 copied successfully
+16:18:58.357 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 3c4f45de1c0ed002cb89eef9a81f610ab59cfedbc24f2b76af2a10b53da4fb4b removed successfully
+16:18:58.377 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/kohsuke/github-api/1.313/github-api-1.313.jar copied successfully
+16:18:58.386 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 1a328a90cad8ad952803342ff71785ae1f732f1274d090c86467a003faa80ec6 removed successfully
+16:18:58.473 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:18:58.560 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:18:58.562 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:18:58.583 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:18:58.593 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breakingBase Maven image exists.
+16:18:58.598 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:18:58.600 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /incrementals-tools/lib/src/main/java/io/jenkins/tools/incrementals/lib/UpdateChecker.java
+16:18:58.601 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:18:58.601 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:18:58.602 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:01.160 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:01.160 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:01.161 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/5769bdad76925da568294cb8a40e7d4469699ac3/patches/patch1, successful=false]
+16:19:01.215 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-breaking deleted successfully
+16:19:01.216 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:5769bdad76925da568294cb8a40e7d4469699ac3-pre not found, skipping deletion
+16:19:01.216 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:19:01.216 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:01.216 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b |
+16:19:01.216 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:01.216 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:19:01.218 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking
+16:19:01.218 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking ...
+16:19:01.420 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking
+16:19:01.659 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:19:01.659 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 741f3b5e20a91b0e9305ae79261e3c5e64971c98 from container to local path
+16:19:01.731 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 741f3b5e20a91b0e9305ae79261e3c5e64971c98 copied successfully
+16:19:02.099 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: fcf8c0ce2f4afd5dde6aae5374cfdceba25668b2a25a17a9c6b8cb43c248052f removed successfully
+16:19:02.133 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4.1/jackson-databind-2.13.4.1.jar copied successfully
+16:19:02.142 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 1536f0f7b0aceee28231d3be00a84fb4776b5dfd12df77e415ee563ddb279c7b removed successfully
+16:19:02.158 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:19:02.239 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:19:02.239 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:19:02.272 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:19:02.281 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breakingBase Maven image exists.
+16:19:02.283 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:19:02.284 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /simplelocalize-cli/src/main/java/io/simplelocalize/cli/client/SimpleLocalizeClient.java
+16:19:02.284 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:19:02.284 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:19:02.284 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:03.504 [ForkJoinPool-1-worker-1] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:03.505 [ForkJoinPool-1-worker-1] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:03.505 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/741f3b5e20a91b0e9305ae79261e3c5e64971c98/patches/patch1, successful=false]
+16:19:03.547 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-breaking deleted successfully
+16:19:03.548 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:741f3b5e20a91b0e9305ae79261e3c5e64971c98-pre not found, skipping deletion
+16:19:03.548 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:19:03.548 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:03.548 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 88a20ece4db960e35fbfa39fcb40e61daceb15b1 |
+16:19:03.548 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:03.548 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:19:03.549 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking
+16:19:03.550 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking ...
+16:19:03.893 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking
+16:19:04.112 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+16:19:04.112 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 7f7de81d28b68b091bef2e6f6ffd1836167be6ea from container to local path
+16:19:04.146 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 7f7de81d28b68b091bef2e6f6ffd1836167be6ea copied successfully
+16:19:04.456 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 4e05a09ffaf0d086e03cc76dbdb22c658590f0c7d75eb9b71b5ec15db66559a7 removed successfully
+16:19:04.473 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/snmp4j/snmp4j-agent/3.6.6/snmp4j-agent-3.6.6.jar copied successfully
+16:19:04.481 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 179d1af522ca587e46e41e7351e914fe1c53f59f4da451b6d73e49e7a57c4932 removed successfully
+16:19:04.488 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+16:19:04.521 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+16:19:04.521 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:19:04.532 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:19:04.540 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breakingBase Maven image exists.
+16:19:04.540 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:19:04.541 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /snmpman/snmpman/src/main/java/com/oneandone/snmpman/SnmpmanAgent.java
+16:19:04.541 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:19:04.541 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:19:04.541 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:05.729 [ForkJoinPool-1-worker-4] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:05.729 [ForkJoinPool-1-worker-4] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:05.729 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/7f7de81d28b68b091bef2e6f6ffd1836167be6ea/patches/patch1, successful=false]
+16:19:05.754 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-breaking deleted successfully
+16:19:05.756 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7f7de81d28b68b091bef2e6f6ffd1836167be6ea-pre not found, skipping deletion
+16:19:05.756 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:19:05.756 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:05.756 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 43b3a858b77ec27fc8946aba292001c3de465012 |
+16:19:05.756 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:05.756 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:19:05.757 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking
+16:19:05.757 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking ...
+16:19:10.631 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking
+16:19:10.866 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:19:10.867 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b from container to local path
+16:19:11.062 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b copied successfully
+16:19:11.405 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 3cc938060442bea30a6e87328ef6153737ace04a4e42c0efb2b9ed333e340f59 removed successfully
+16:19:11.530 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/hibernate/hibernate-core/5.4.24.Final/hibernate-core-5.4.24.Final.jar copied successfully
+16:19:11.541 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 830bb32c3c71571737e5b5f6cc9086972f1c58b266572a687109d3aa2c6c8a87 removed successfully
+16:19:11.566 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:19:11.692 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:19:11.692 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:19:11.752 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:19:11.761 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breakingBase Maven image exists.
+16:19:11.762 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:19:11.763 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /onebusaway-gtfs-modules/onebusaway-gtfs-hibernate/src/main/java/org/onebusaway/gtfs/impl/ServiceDateUserType.java
+16:19:11.763 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:19:11.763 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:19:11.763 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:12.998 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:12.998 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:12.998 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=3, postfixErrors=0, fixedErrors=3, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b/patches/patch1, successful=false]
+16:19:13.048 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-breaking deleted successfully
+16:19:13.050 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7c62ae7f31ed9c994a9c1e6906fb9de391c1af5b-pre not found, skipping deletion
+16:19:13.050 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:19:13.050 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:13.050 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 1e17e176460ab4283e463e62fece844d341da7f0 |
+16:19:13.050 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:13.050 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:19:13.051 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking
+16:19:13.051 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking ...
+16:19:13.653 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking
+16:19:13.872 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+16:19:13.872 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 43b3a858b77ec27fc8946aba292001c3de465012 from container to local path
+16:19:13.991 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 43b3a858b77ec27fc8946aba292001c3de465012 copied successfully
+16:19:14.316 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: d36cea949412d86282c6368f8b9709f7dd9d7a5be131d639a4219ab067eeeeca removed successfully
+16:19:14.323 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar copied successfully
+16:19:14.331 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 4dcaf74bc834178b04c859bc2c386b5c73194e8cff2eb720343610a0af8026b0 removed successfully
+16:19:14.339 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+16:19:14.412 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+16:19:14.412 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:19:14.451 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:19:14.460 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breakingBase Maven image exists.
+16:19:14.461 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:19:14.462 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /pdb/src/test/java/com/feedzai/commons/sql/abstraction/engine/impl/abs/EngineGeneralTest.java
+16:19:14.462 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:19:14.462 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:19:14.462 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+16:19:15.405 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking
+16:19:15.651 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:19:15.651 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 88a20ece4db960e35fbfa39fcb40e61daceb15b1 from container to local path
+16:19:15.689 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 88a20ece4db960e35fbfa39fcb40e61daceb15b1 copied successfully
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:15.778 [ForkJoinPool-1-worker-4] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:15.778 [ForkJoinPool-1-worker-4] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:15.779 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/43b3a858b77ec27fc8946aba292001c3de465012/patches/patch1, successful=false]
+16:19:15.812 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-breaking deleted successfully
+16:19:15.814 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:43b3a858b77ec27fc8946aba292001c3de465012-pre not found, skipping deletion
+16:19:15.814 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:19:15.814 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:15.814 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - | Processing breaking update: 3eb708f53f5f1ce897c3554bb73f5de5698dd171 |
+16:19:15.814 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:15.814 [ForkJoinPool-1-worker-4] INFO  se.kth.Bump - 
+16:19:15.815 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking
+16:19:15.815 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking ...
+16:19:16.038 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 0ec124042a56d44259c91598057f8945de7e69ca82f11074b0ab39df357e307f removed successfully
+16:19:16.051 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/google/cloud/google-cloud-pubsublite/1.6.3/google-cloud-pubsublite-1.6.3.jar copied successfully
+16:19:16.059 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 7512d42181daeb62c5330b9650f2beb52ae52ea3060c528af5b74b3cb38a8ed0 removed successfully
+16:19:16.072 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:19:16.114 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:19:16.115 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:19:16.130 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:19:16.139 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breakingBase Maven image exists.
+16:19:16.140 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 3
+16:19:16.141 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /java-pubsub-group-kafka-connector/src/main/java/com/google/pubsublite/kafka/sink/PublisherFactoryImpl.java
+16:19:16.141 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:19:16.141 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:19:16.141 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:17.335 [ForkJoinPool-1-worker-1] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:17.335 [ForkJoinPool-1-worker-1] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:17.336 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=3, postfixFiles=0, fixedFiles=3, unfixedFiles=0, newFiles=0, prefixErrors=7, postfixErrors=0, fixedErrors=7, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/88a20ece4db960e35fbfa39fcb40e61daceb15b1/patches/patch1, successful=false]
+16:19:17.373 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-breaking deleted successfully
+16:19:17.374 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:88a20ece4db960e35fbfa39fcb40e61daceb15b1-pre not found, skipping deletion
+16:19:17.375 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:19:17.375 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:17.375 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - | Processing breaking update: 61e96bfe3a32d6ef2e5d7912a518c78bd5474e74 |
+16:19:17.375 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:17.375 [ForkJoinPool-1-worker-1] INFO  se.kth.Bump - 
+16:19:17.376 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking
+16:19:17.376 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking ...
+16:19:29.994 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking
+16:19:30.397 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:19:30.397 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 1e17e176460ab4283e463e62fece844d341da7f0 from container to local path
+16:19:31.591 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 1e17e176460ab4283e463e62fece844d341da7f0 copied successfully
+16:19:31.997 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 0fb8eef90bcbdb8a4212a638c4d827d58ac11d8e50a5ea2ca0b240f518149ed5 removed successfully
+16:19:32.007 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar copied successfully
+16:19:32.016 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: c052ad42a547c0a9a725887b77a369f7d5683742e619d08a8183af2d42d81ad4 removed successfully
+16:19:32.042 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:19:32.191 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:19:32.192 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:19:32.257 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:19:32.267 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breakingBase Maven image exists.
+16:19:32.268 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 3
+16:19:32.268 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /polyglot-maven/polyglot-yaml/src/main/java/org/sonatype/maven/polyglot/yaml/ModelConstructor.java
+16:19:32.269 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:19:32.269 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:19:32.269 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:19:33.479 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:19:33.479 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:19:33.479 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=3, postfixFiles=0, fixedFiles=3, unfixedFiles=0, newFiles=0, prefixErrors=4, postfixErrors=0, fixedErrors=4, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/1e17e176460ab4283e463e62fece844d341da7f0/patches/patch1, successful=false]
+16:19:33.567 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-breaking deleted successfully
+16:19:33.569 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:1e17e176460ab4283e463e62fece844d341da7f0-pre not found, skipping deletion
+16:19:33.569 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:19:33.569 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:33.569 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: b1a941400d68445d76056ab8833cd6d2e3455954 |
+16:19:33.569 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:19:33.569 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:19:33.570 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking
+16:19:33.570 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking ...
+16:20:07.396 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking
+16:20:07.892 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:20:07.893 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder b1a941400d68445d76056ab8833cd6d2e3455954 from container to local path
+16:20:08.175 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder b1a941400d68445d76056ab8833cd6d2e3455954 copied successfully
+16:20:08.545 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 695ef5935d6b0a26ac8e69192bce2290e4220f0b83aebffe6d4df88683697cd1 removed successfully
+16:20:08.560 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar copied successfully
+16:20:08.568 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: d538dfa75a06c1467f46e0a2f87340c7f4bd7d14d86d4c58d98e07229ac9678b removed successfully
+16:20:08.584 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:20:08.721 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:20:08.721 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:20:08.792 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:20:08.801 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breakingBase Maven image exists.
+16:20:08.802 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:20:08.803 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /fluxtion/compiler/src/test/java/com/fluxtion/compiler/builder/factory/GraphOfInstancesTest.java
+16:20:08.803 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:20:08.803 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:20:08.803 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+16:20:09.967 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:20:10.203 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:20:10.203 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:20:10.203 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=2, postfixErrors=0, fixedErrors=2, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/b1a941400d68445d76056ab8833cd6d2e3455954/patches/patch1, successful=false]
+16:20:10.260 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-breaking deleted successfully
+16:20:10.261 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:b1a941400d68445d76056ab8833cd6d2e3455954-pre not found, skipping deletion
+16:20:10.261 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:20:10.261 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:20:10.261 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - | Processing breaking update: 36859167815292f279e570d39dd2ddbcf1622dc6 |
+16:20:10.261 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - |----------------------------------------------------------------------|
+16:20:10.261 [ForkJoinPool-1-worker-2] INFO  se.kth.Bump - 
+16:20:10.262 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Base image not present, pulling ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking
+16:20:10.262 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Pulling Maven image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking ...
+16:20:10.297 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - 
+16:20:10.297 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Copying folder 61e96bfe3a32d6ef2e5d7912a518c78bd5474e74 from container to local path
+16:20:10.538 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Folder 61e96bfe3a32d6ef2e5d7912a518c78bd5474e74 copied successfully
+16:20:10.913 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: 77a633e1a11542b9149334176c7977e860ee137ef2c0fd7e726132ec65d9075d removed successfully
+16:20:10.929 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - File /root/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar copied successfully
+16:20:10.938 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Container with id: f3b9c32d96ba590f226f060d95382fa9cbdc7dffcafb71c38f220a90b0b5bdab removed successfully
+16:20:10.949 [ForkJoinPool-1-worker-1] ERROR se.kth.GitManager - Repository HEAD is null
+16:20:11.031 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch original_status created
+16:20:11.031 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:20:11.067 [ForkJoinPool-1-worker-1] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:20:11.075 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breakingBase Maven image exists.
+16:20:11.076 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:20:11.076 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - File: /singer/thrift-logger/src/main/java/com/pinterest/singer/client/logback/AppenderUtils.java
+16:20:11.076 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:20:11.076 [ForkJoinPool-1-worker-1] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:20:11.077 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:20:12.418 [ForkJoinPool-1-worker-1] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:20:12.418 [ForkJoinPool-1-worker-1] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:20:12.418 [ForkJoinPool-1-worker-1] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=4, postfixErrors=0, fixedErrors=4, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/61e96bfe3a32d6ef2e5d7912a518c78bd5474e74/patches/patch1, successful=false]
+16:20:12.457 [ForkJoinPool-1-worker-1] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-breaking deleted successfully
+16:20:12.458 [ForkJoinPool-1-worker-1] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:61e96bfe3a32d6ef2e5d7912a518c78bd5474e74-pre not found, skipping deletion
+16:20:13.598 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking
+16:20:14.120 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - 
+16:20:14.120 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Copying folder 36859167815292f279e570d39dd2ddbcf1622dc6 from container to local path
+16:20:14.563 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Folder 36859167815292f279e570d39dd2ddbcf1622dc6 copied successfully
+16:20:14.987 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: 183bd3ec393131d66b8dea2ad98cff4ac187eea2d6858af0edbb3e7b509752cc removed successfully
+16:20:15.066 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - File /root/.m2/repository/org/apache/xmlgraphics/fop/2.2/fop-2.2.jar copied successfully
+16:20:15.076 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Container with id: cea71b5443131ccf8eca346ec80f5bfd1bc82618fc81596dae22a00ff69f6dc0 removed successfully
+16:20:15.090 [ForkJoinPool-1-worker-2] ERROR se.kth.GitManager - Repository HEAD is null
+16:20:15.318 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch original_status created
+16:20:15.318 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:20:15.395 [ForkJoinPool-1-worker-2] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:20:15.403 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breakingBase Maven image exists.
+16:20:15.403 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:20:15.404 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - File: /billy/billy-gin/src/main/java/com/premiumminds/billy/gin/services/impl/pdf/FOPPDFTransformer.java
+16:20:15.404 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:20:15.404 [ForkJoinPool-1-worker-2] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:20:15.404 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Waiting for response...
+16:20:15.903 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking
+16:20:16.099 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - 
+16:20:16.099 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Copying folder 7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8 from container to local path
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:20:16.665 [ForkJoinPool-1-worker-2] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:20:16.665 [ForkJoinPool-1-worker-2] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:20:16.665 [ForkJoinPool-1-worker-2] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=1, postfixErrors=0, fixedErrors=1, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/36859167815292f279e570d39dd2ddbcf1622dc6/patches/patch1, successful=false]
+16:20:16.722 [ForkJoinPool-1-worker-2] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-breaking deleted successfully
+16:20:16.723 [ForkJoinPool-1-worker-2] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:36859167815292f279e570d39dd2ddbcf1622dc6-pre not found, skipping deletion
+16:20:41.155 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Done pulling Maven image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking
+16:20:41.751 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - 
+16:20:41.752 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Copying folder 3eb708f53f5f1ce897c3554bb73f5de5698dd171 from container to local path
+16:20:52.297 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Folder 7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8 copied successfully
+16:20:52.859 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 8ecd9263b5f94937dbfcfd8a02de76f8ee6a992755ce046bd1ab72977f1d30d3 removed successfully
+16:20:52.866 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/google/apis/google-api-services-dns/v2-rev20220505-1.32.1/google-api-services-dns-v2-rev20220505-1.32.1.jar copied successfully
+16:20:52.875 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Container with id: 7d5960929e6484afd7358b4eb9cf460005d72e13b100fbf1c10ed7418270676a removed successfully
+16:20:52.972 [ForkJoinPool-1-worker-3] ERROR se.kth.GitManager - Repository HEAD is null
+16:21:09.326 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch original_status created
+16:21:09.326 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:21:24.751 [ForkJoinPool-1-worker-3] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:21:24.759 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breakingBase Maven image exists.
+16:21:24.762 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 1
+16:21:24.763 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - File: /google-cloud-java/java-dns/src/main/java/com/google/cloud/dns/spi/v1/HttpDnsRpc.java
+16:21:24.763 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:21:24.763 [ForkJoinPool-1-worker-3] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:21:24.763 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:21:25.920 [ForkJoinPool-1-worker-3] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:21:25.920 [ForkJoinPool-1-worker-3] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:21:25.921 [ForkJoinPool-1-worker-3] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=1, postfixFiles=0, fixedFiles=1, unfixedFiles=0, newFiles=0, prefixErrors=9, postfixErrors=0, fixedErrors=9, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8/patches/patch1, successful=false]
+16:21:26.682 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Folder 3eb708f53f5f1ce897c3554bb73f5de5698dd171 copied successfully
+16:21:27.427 [ForkJoinPool-1-worker-3] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-breaking deleted successfully
+16:21:27.429 [ForkJoinPool-1-worker-3] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8-pre not found, skipping deletion
+16:21:27.432 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: 69a7133e91c3a70a9c0d408fb2feaec8c62b98b34023a039a1b8d00d5f8bdc36 removed successfully
+16:21:27.442 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - File /root/.m2/repository/com/google/apis/google-api-services-translate/v3-rev20220805-2.0.0/google-api-services-translate-v3-rev20220805-2.0.0.jar copied successfully
+16:21:27.450 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Container with id: ef1ab03ccc189142b87d56b8d6e7e5627be8b493ec0619dcd710dd7a2d97eeaf removed successfully
+16:21:27.639 [ForkJoinPool-1-worker-4] ERROR se.kth.GitManager - Repository HEAD is null
+16:21:43.586 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch original_status created
+16:21:43.586 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Compilation failure detected.
+16:21:58.169 [ForkJoinPool-1-worker-4] INFO  se.kth.GitManager - Branch repair_direct_compilation_failure_0 created
+16:21:58.181 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breakingBase Maven image exists.
+16:21:58.189 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Constructs found in the direct compilation failure: 6
+16:21:58.215 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - File: /google-cloud-java/java-translate/google-cloud-translate/src/main/java/com/google/cloud/translate/TranslateImpl.java
+16:21:58.215 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.GeneratePrompt - Generating prompt for pipeline: BASELINE
+16:21:58.215 [ForkJoinPool-1-worker-4] INFO  se.kth.prompt.BasePromptTemplate - Generating prompt for baseline pipeline
+16:21:58.216 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Waiting for response...
+Script failed with exit code: 1
+/home/ilja23375493/g34/bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 148, in <module>
+    response = get_llm_response(args.prompt, llm_type)
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 74, in get_llm_response
+    return _llm_type.get_model(prompt_from_file, file_prompt_path)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 23, in get_model
+    return LLMResolver.get_model(self, prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 134, in get_model
+    return definitions[for_type](prompt, file_path)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ilja23375493/g34/bacardi/llm/call_llm.py", line 57, in init_openroute
+    _result = model_response._generate_response()
+  File "/home/ilja23375493/g34/bacardi/llm/models/openrouter.py", line 50, in _generate_response
+    raise Exception(response["error"])
+Exception: {'message': 'Missing Authentication header', 'code': 401}
+
+16:21:59.253 [ForkJoinPool-1-worker-4] ERROR s.kth.prompt.AbstractPromptTemplate - Error extracting content from the model response
+16:21:59.253 [ForkJoinPool-1-worker-4] ERROR se.kth.BacardiCore - Error saving prompt to file. null
+16:21:59.253 [ForkJoinPool-1-worker-4] INFO  se.kth.BacardiCore - Attempt: Attempt[index=1, failureCategory=ERROR_MODEL_RESPONSE, prefixFiles=6, postfixFiles=0, fixedFiles=6, unfixedFiles=0, newFiles=0, prefixErrors=50, postfixErrors=0, fixedErrors=50, unfixedErrors=0, newErrors=0, outputFolder=/home/ilja23375493/g34/g34-byam-repro/runs/event-a/p1/deepseek-deepseek-chat/3eb708f53f5f1ce897c3554bb73f5de5698dd171/patches/patch1, successful=false]
+16:22:00.984 [ForkJoinPool-1-worker-4] INFO  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-breaking deleted successfully
+16:22:00.986 [ForkJoinPool-1-worker-4] WARN  se.kth.DockerBuild - Image ghcr.io/chains-project/breaking-updates:3eb708f53f5f1ce897c3554bb73f5de5698dd171-pre not found, skipping deletion
