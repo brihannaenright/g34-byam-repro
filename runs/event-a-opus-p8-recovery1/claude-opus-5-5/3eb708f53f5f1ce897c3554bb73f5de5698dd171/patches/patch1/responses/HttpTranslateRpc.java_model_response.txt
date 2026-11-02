@@ -1,0 +1,283 @@
+<repair_strategy>
+1. The `google-api-services-translate` dependency moved from the v2 client to v3. The old `Translate` client is gone, along with the `com.google.api.services.translate.model` package. That package held `TranslationsResource`, `LanguagesResource` and `DetectionsResourceItems`.
+2. The v3 client uses different endpoints and different request/response models. It cannot directly replace the v2 calls without changing method signatures, which is not allowed.
+3. The v2 REST endpoints still exist. I will call them directly with google-http-client, which is still available. I will use the existing `buildTargetUrl` helper and parse the JSON responses with `JacksonFactory`.
+4. The removed model classes are recreated as nested static classes with the same names, extending `GenericJson`. This keeps every method signature textually unchanged.
+5. The `Translate` client field is replaced with an `HttpRequestFactory`, a `JsonFactory` and a base URL. The base URL is the host plus `language/translate/`, which was the old client's service path.
+6. Caveat: if the `TranslateRpc` interface still imports the removed model package, that interface will also fail to compile. In that case the `@Override` annotations below will only work if the interface is updated to use these nested types. That change is outside this file and cannot be made here.
+</repair_strategy>
+
+```java
+/*
+ * Copyright 2016 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.google.cloud.translate.spi.v2;
+
+import static com.google.common.base.MoreObjects.firstNonNull;
+
+import com.google.api.client.http.GenericUrl;
+import com.google.api.client.http.HttpRequest;
+import com.google.api.client.http.HttpRequestFactory;
+import com.google.api.client.http.HttpRequestInitializer;
+import com.google.api.client.http.HttpResponse;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.http.UrlEncodedContent;
+import com.google.api.client.json.GenericJson;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.client.util.Key;
+import com.google.cloud.http.HttpTransportOptions;
+import com.google.cloud.translate.TranslateException;
+import com.google.cloud.translate.TranslateOptions;
+import com.google.common.base.Function;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Lists;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class HttpTranslateRpc implements TranslateRpc {
+
+  public static class DetectionsResourceItems extends GenericJson {
+    @Key private Float confidence;
+    @Key private Boolean isReliable;
+    @Key private String language;
+
+    public Float getConfidence() {
+      return confidence;
+    }
+
+    public DetectionsResourceItems setConfidence(Float confidence) {
+      this.confidence = confidence;
+      return this;
+    }
+
+    public Boolean getIsReliable() {
+      return isReliable;
+    }
+
+    public DetectionsResourceItems setIsReliable(Boolean isReliable) {
+      this.isReliable = isReliable;
+      return this;
+    }
+
+    public String getLanguage() {
+      return language;
+    }
+
+    public DetectionsResourceItems setLanguage(String language) {
+      this.language = language;
+      return this;
+    }
+  }
+
+  public static class LanguagesResource extends GenericJson {
+    @Key private String language;
+    @Key private String name;
+
+    public String getLanguage() {
+      return language;
+    }
+
+    public LanguagesResource setLanguage(String language) {
+      this.language = language;
+      return this;
+    }
+
+    public String getName() {
+      return name;
+    }
+
+    public LanguagesResource setName(String name) {
+      this.name = name;
+      return this;
+    }
+  }
+
+  public static class TranslationsResource extends GenericJson {
+    @Key private String detectedSourceLanguage;
+    @Key private String model;
+    @Key private String translatedText;
+
+    public String getDetectedSourceLanguage() {
+      return detectedSourceLanguage;
+    }
+
+    public TranslationsResource setDetectedSourceLanguage(String detectedSourceLanguage) {
+      this.detectedSourceLanguage = detectedSourceLanguage;
+      return this;
+    }
+
+    public String getModel() {
+      return model;
+    }
+
+    public TranslationsResource setModel(String model) {
+      this.model = model;
+      return this;
+    }
+
+    public String getTranslatedText() {
+      return translatedText;
+    }
+
+    public TranslationsResource setTranslatedText(String translatedText) {
+      this.translatedText = translatedText;
+      return this;
+    }
+  }
+
+  public static class DetectionsData extends GenericJson {
+    @Key public List<List<DetectionsResourceItems>> detections;
+  }
+
+  public static class DetectionsResponse extends GenericJson {
+    @Key public DetectionsData data;
+  }
+
+  public static class LanguagesData extends GenericJson {
+    @Key public List<LanguagesResource> languages;
+  }
+
+  public static class LanguagesResponse extends GenericJson {
+    @Key public LanguagesData data;
+  }
+
+  public static class TranslationsData extends GenericJson {
+    @Key public List<TranslationsResource> translations;
+  }
+
+  public static class TranslationsResponse extends GenericJson {
+    @Key public TranslationsData data;
+  }
+
+  private final TranslateOptions options;
+  private final HttpRequestFactory requestFactory;
+  private final JsonFactory jsonFactory;
+  private final String baseUrl;
+
+  public HttpTranslateRpc(TranslateOptions options) {
+    HttpTransportOptions transportOptions = (HttpTransportOptions) options.getTransportOptions();
+    HttpTransport transport = transportOptions.getHttpTransportFactory().create();
+    HttpRequestInitializer initializer = transportOptions.getHttpRequestInitializer(options);
+    this.options = options;
+    this.jsonFactory = new JacksonFactory();
+    this.requestFactory = transport.createRequestFactory(initializer);
+    String host = options.getHost();
+    if (!host.endsWith("/")) {
+      host = host + "/";
+    }
+    this.baseUrl = host + "language/translate/";
+  }
+
+  private static TranslateException translate(IOException exception) {
+    return new TranslateException(exception);
+  }
+
+  private GenericUrl buildTargetUrl(String path) {
+    GenericUrl genericUrl = new GenericUrl(baseUrl + "v2/" + path);
+    if (options.getApiKey() != null) {
+      genericUrl.put("key", options.getApiKey());
+    }
+    return genericUrl;
+  }
+
+  private <T> T post(String path, Map<String, Object> params, Class<T> clazz)
+      throws IOException {
+    GenericUrl url = buildTargetUrl(path);
+    HttpRequest request = requestFactory.buildPostRequest(url, new UrlEncodedContent(params));
+    request.setParser(jsonFactory.createJsonObjectParser());
+    HttpResponse response = request.execute();
+    try {
+      return response.parseAs(clazz);
+    } finally {
+      response.disconnect();
+    }
+  }
+
+  @Override
+  public List<List<DetectionsResourceItems>> detect(List<String> texts) {
+    try {
+      Map<String, Object> params = new HashMap<>();
+      params.put("q", texts);
+      DetectionsResponse response = post("detect", params, DetectionsResponse.class);
+      List<List<DetectionsResourceItems>> detections =
+          response != null && response.data != null ? response.data.detections : null;
+      return detections != null ? detections : ImmutableList.<List<DetectionsResourceItems>>of();
+    } catch (IOException ex) {
+      throw translate(ex);
+    }
+  }
+
+  @Override
+  public List<LanguagesResource> listSupportedLanguages(Map<Option, ?> optionMap) {
+    try {
+      Map<String, Object> params = new HashMap<>();
+      String target =
+          firstNonNull(Option.TARGET_LANGUAGE.getString(optionMap), options.getTargetLanguage());
+      if (target != null) {
+        params.put("target", target);
+      }
+      LanguagesResponse response = post("languages", params, LanguagesResponse.class);
+      List<LanguagesResource> languages =
+          response != null && response.data != null ? response.data.languages : null;
+      return languages != null ? languages : ImmutableList.<LanguagesResource>of();
+    } catch (IOException ex) {
+      throw translate(ex);
+    }
+  }
+
+  @Override
+  public List<TranslationsResource> translate(List<String> texts, Map<Option, ?> optionMap) {
+    try {
+      String targetLanguage =
+          firstNonNull(Option.TARGET_LANGUAGE.getString(optionMap), options.getTargetLanguage());
+      final String sourceLanguage = Option.SOURCE_LANGUAGE.getString(optionMap);
+      Map<String, Object> params = new HashMap<>();
+      params.put("q", texts);
+      params.put("target", targetLanguage);
+      if (sourceLanguage != null) {
+        params.put("source", sourceLanguage);
+      }
+      String model = Option.MODEL.getString(optionMap);
+      if (model != null) {
+        params.put("model", model);
+      }
+      String format = Option.FORMAT.getString(optionMap);
+      if (format != null) {
+        params.put("format", format);
+      }
+      TranslationsResponse response = post("", params, TranslationsResponse.class);
+      List<TranslationsResource> translations =
+          response != null && response.data != null ? response.data.translations : null;
+      return Lists.transform(
+          translations != null ? translations : ImmutableList.<TranslationsResource>of(),
+          new Function<TranslationsResource, TranslationsResource>() {
+            @Override
+            public TranslationsResource apply(TranslationsResource translationsResource) {
+              if (translationsResource.getDetectedSourceLanguage() == null) {
+                translationsResource.setDetectedSourceLanguage(sourceLanguage);
+              }
+              return translationsResource;
+            }
+          });
+    } catch (IOException ex) {
+      throw translate(ex);
+    }
+  }
+}
+```

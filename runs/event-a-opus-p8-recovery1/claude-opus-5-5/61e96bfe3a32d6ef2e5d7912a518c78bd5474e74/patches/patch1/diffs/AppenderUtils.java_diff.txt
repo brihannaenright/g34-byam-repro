@@ -1,0 +1,38 @@
+33a34
+> import java.io.ByteArrayOutputStream;
+57d57
+<     @Override
+68d67
+<     @Override
+78d76
+<     @Override
+79a78
+>       if (framedTransport != null) {
+80a80,106
+>       }
+>     }
+> 
+>     @Override
+>     public byte[] headerBytes() {
+>       return null;
+>     }
+> 
+>     @Override
+>     public byte[] encode(LogMessage logMessage) {
+>       ByteArrayOutputStream baos = new ByteArrayOutputStream();
+>       try {
+>         final int bufferCapacity = 10;
+>         TTransport transport = new TFastFramedTransport(new TIOStreamTransport(baos),
+>             bufferCapacity);
+>         TProtocol proto = new TBinaryProtocol(transport);
+>         logMessage.write(proto);
+>         transport.flush();
+>       } catch (TException e) {
+>         throw new RuntimeException(e);
+>       }
+>       return baos.toByteArray();
+>     }
+> 
+>     @Override
+>     public byte[] footerBytes() {
+>       return null;

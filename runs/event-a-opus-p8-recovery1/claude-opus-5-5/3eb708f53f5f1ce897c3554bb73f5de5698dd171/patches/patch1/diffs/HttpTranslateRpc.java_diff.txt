@@ -1,0 +1,226 @@
+21a22,23
+> import com.google.api.client.http.HttpRequest;
+> import com.google.api.client.http.HttpRequestFactory;
+22a25
+> import com.google.api.client.http.HttpResponse;
+23a27,29
+> import com.google.api.client.http.UrlEncodedContent;
+> import com.google.api.client.json.GenericJson;
+> import com.google.api.client.json.JsonFactory;
+25,28c31
+< import com.google.api.services.translate.Translate;
+< import com.google.api.services.translate.model.DetectionsResourceItems;
+< import com.google.api.services.translate.model.LanguagesResource;
+< import com.google.api.services.translate.model.TranslationsResource;
+---
+> import com.google.api.client.util.Key;
+35a39
+> import java.util.HashMap;
+40a45,157
+>   public static class DetectionsResourceItems extends GenericJson {
+>     @Key private Float confidence;
+>     @Key private Boolean isReliable;
+>     @Key private String language;
+> 
+>     public Float getConfidence() {
+>       return confidence;
+>     }
+> 
+>     public DetectionsResourceItems setConfidence(Float confidence) {
+>       this.confidence = confidence;
+>       return this;
+>     }
+> 
+>     public Boolean getIsReliable() {
+>       return isReliable;
+>     }
+> 
+>     public DetectionsResourceItems setIsReliable(Boolean isReliable) {
+>       this.isReliable = isReliable;
+>       return this;
+>     }
+> 
+>     public String getLanguage() {
+>       return language;
+>     }
+> 
+>     public DetectionsResourceItems setLanguage(String language) {
+>       this.language = language;
+>       return this;
+>     }
+>   }
+> 
+>   public static class LanguagesResource extends GenericJson {
+>     @Key private String language;
+>     @Key private String name;
+> 
+>     public String getLanguage() {
+>       return language;
+>     }
+> 
+>     public LanguagesResource setLanguage(String language) {
+>       this.language = language;
+>       return this;
+>     }
+> 
+>     public String getName() {
+>       return name;
+>     }
+> 
+>     public LanguagesResource setName(String name) {
+>       this.name = name;
+>       return this;
+>     }
+>   }
+> 
+>   public static class TranslationsResource extends GenericJson {
+>     @Key private String detectedSourceLanguage;
+>     @Key private String model;
+>     @Key private String translatedText;
+> 
+>     public String getDetectedSourceLanguage() {
+>       return detectedSourceLanguage;
+>     }
+> 
+>     public TranslationsResource setDetectedSourceLanguage(String detectedSourceLanguage) {
+>       this.detectedSourceLanguage = detectedSourceLanguage;
+>       return this;
+>     }
+> 
+>     public String getModel() {
+>       return model;
+>     }
+> 
+>     public TranslationsResource setModel(String model) {
+>       this.model = model;
+>       return this;
+>     }
+> 
+>     public String getTranslatedText() {
+>       return translatedText;
+>     }
+> 
+>     public TranslationsResource setTranslatedText(String translatedText) {
+>       this.translatedText = translatedText;
+>       return this;
+>     }
+>   }
+> 
+>   public static class DetectionsData extends GenericJson {
+>     @Key public List<List<DetectionsResourceItems>> detections;
+>   }
+> 
+>   public static class DetectionsResponse extends GenericJson {
+>     @Key public DetectionsData data;
+>   }
+> 
+>   public static class LanguagesData extends GenericJson {
+>     @Key public List<LanguagesResource> languages;
+>   }
+> 
+>   public static class LanguagesResponse extends GenericJson {
+>     @Key public LanguagesData data;
+>   }
+> 
+>   public static class TranslationsData extends GenericJson {
+>     @Key public List<TranslationsResource> translations;
+>   }
+> 
+>   public static class TranslationsResponse extends GenericJson {
+>     @Key public TranslationsData data;
+>   }
+> 
+42c159,161
+<   private final Translate translate;
+---
+>   private final HttpRequestFactory requestFactory;
+>   private final JsonFactory jsonFactory;
+>   private final String baseUrl;
+49,53c168,174
+<     translate =
+<         new Translate.Builder(transport, new JacksonFactory(), initializer)
+<             .setRootUrl(options.getHost())
+<             .setApplicationName(options.getApplicationName())
+<             .build();
+---
+>     this.jsonFactory = new JacksonFactory();
+>     this.requestFactory = transport.createRequestFactory(initializer);
+>     String host = options.getHost();
+>     if (!host.endsWith("/")) {
+>       host = host + "/";
+>     }
+>     this.baseUrl = host + "language/translate/";
+61c182
+<     GenericUrl genericUrl = new GenericUrl(translate.getBaseUrl() + "v2/" + path);
+---
+>     GenericUrl genericUrl = new GenericUrl(baseUrl + "v2/" + path);
+67a189,201
+>   private <T> T post(String path, Map<String, Object> params, Class<T> clazz)
+>       throws IOException {
+>     GenericUrl url = buildTargetUrl(path);
+>     HttpRequest request = requestFactory.buildPostRequest(url, new UrlEncodedContent(params));
+>     request.setParser(jsonFactory.createJsonObjectParser());
+>     HttpResponse response = request.execute();
+>     try {
+>       return response.parseAs(clazz);
+>     } finally {
+>       response.disconnect();
+>     }
+>   }
+> 
+70a205,207
+>       Map<String, Object> params = new HashMap<>();
+>       params.put("q", texts);
+>       DetectionsResponse response = post("detect", params, DetectionsResponse.class);
+72c209
+<           translate.detections().list(texts).setKey(options.getApiKey()).execute().getDetections();
+---
+>           response != null && response.data != null ? response.data.detections : null;
+81a219,225
+>       Map<String, Object> params = new HashMap<>();
+>       String target =
+>           firstNonNull(Option.TARGET_LANGUAGE.getString(optionMap), options.getTargetLanguage());
+>       if (target != null) {
+>         params.put("target", target);
+>       }
+>       LanguagesResponse response = post("languages", params, LanguagesResponse.class);
+83,91c227
+<           translate
+<               .languages()
+<               .list()
+<               .setKey(options.getApiKey())
+<               .setTarget(
+<                   firstNonNull(
+<                       Option.TARGET_LANGUAGE.getString(optionMap), options.getTargetLanguage()))
+<               .execute()
+<               .getLanguages();
+---
+>           response != null && response.data != null ? response.data.languages : null;
+103a240,254
+>       Map<String, Object> params = new HashMap<>();
+>       params.put("q", texts);
+>       params.put("target", targetLanguage);
+>       if (sourceLanguage != null) {
+>         params.put("source", sourceLanguage);
+>       }
+>       String model = Option.MODEL.getString(optionMap);
+>       if (model != null) {
+>         params.put("model", model);
+>       }
+>       String format = Option.FORMAT.getString(optionMap);
+>       if (format != null) {
+>         params.put("format", format);
+>       }
+>       TranslationsResponse response = post("", params, TranslationsResponse.class);
+105,113c256
+<           translate
+<               .translations()
+<               .list(texts, targetLanguage)
+<               .setSource(sourceLanguage)
+<               .setKey(options.getApiKey())
+<               .setModel(Option.MODEL.getString(optionMap))
+<               .setFormat(Option.FORMAT.getString(optionMap))
+<               .execute()
+<               .getTranslations();
+---
+>           response != null && response.data != null ? response.data.translations : null;

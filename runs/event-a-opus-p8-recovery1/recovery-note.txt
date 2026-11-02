@@ -1,0 +1,1 @@
+Recovery after inherited ANTHROPIC_BASE_URL pointed to an unresolvable Telnyx endpoint. Original evidence preserved. Same P8 settings and cases; fresh project/output paths. Run endpoint explicitly set to https://api.anthropic.com.

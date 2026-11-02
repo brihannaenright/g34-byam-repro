@@ -1,0 +1,79 @@
+23,25d22
+< import com.google.api.services.translate.model.DetectionsResourceItems;
+< import com.google.api.services.translate.model.LanguagesResource;
+< import com.google.api.services.translate.model.TranslationsResource;
+37d33
+< import java.util.concurrent.Callable;
+43,51d38
+<   private static final Function<List<DetectionsResourceItems>, Detection>
+<       DETECTION_FROM_PB_FUNCTION =
+<           new Function<List<DetectionsResourceItems>, Detection>() {
+<             @Override
+<             public Detection apply(List<DetectionsResourceItems> detectionPb) {
+<               return Detection.fromPb(detectionPb.get(0));
+<             }
+<           };
+< 
+62,67c49
+<               new Callable<List<LanguagesResource>>() {
+<                 @Override
+<                 public List<LanguagesResource> call() {
+<                   return translateRpc.listSupportedLanguages(optionMap(options));
+<                 }
+<               },
+---
+>               () -> translateRpc.listSupportedLanguages(optionMap(options)),
+80c62,63
+<       List<List<DetectionsResourceItems>> detectionsPb =
+---
+>       return checkAndTransformDetections(
+>           texts,
+82,87c65
+<               new Callable<List<List<DetectionsResourceItems>>>() {
+<                 @Override
+<                 public List<List<DetectionsResourceItems>> call() {
+<                   return translateRpc.detect(texts);
+<                 }
+<               },
+---
+>               () -> translateRpc.detect(texts),
+90,91c68,77
+<               getOptions().getClock());
+<       Iterator<List<DetectionsResourceItems>> detectionIterator = detectionsPb.iterator();
+---
+>               getOptions().getClock()),
+>           item -> Detection.fromPb(item));
+>     } catch (RetryHelperException e) {
+>       throw TranslateException.translateAndThrow(e);
+>     }
+>   }
+> 
+>   private static <T> List<Detection> checkAndTransformDetections(
+>       List<String> texts, List<List<T>> detectionsPb, final Function<T, Detection> fromPb) {
+>     Iterator<List<T>> detectionIterator = detectionsPb.iterator();
+94c80
+<         List<DetectionsResourceItems> detectionPb = detectionIterator.next();
+---
+>       List<T> detectionPb = detectionIterator.next();
+100,102c86,91
+<       return Lists.transform(detectionsPb, DETECTION_FROM_PB_FUNCTION);
+<     } catch (RetryHelperException e) {
+<       throw TranslateException.translateAndThrow(e);
+---
+>     return Lists.transform(
+>         detectionsPb,
+>         new Function<List<T>, Detection>() {
+>           @Override
+>           public Detection apply(List<T> detectionPb) {
+>             return fromPb.apply(detectionPb.get(0));
+103a93
+>         });
+121,126c111
+<               new Callable<List<TranslationsResource>>() {
+<                 @Override
+<                 public List<TranslationsResource> call() {
+<                   return translateRpc.translate(texts, optionMap(options));
+<                 }
+<               },
+---
+>               () -> translateRpc.translate(texts, optionMap(options)),

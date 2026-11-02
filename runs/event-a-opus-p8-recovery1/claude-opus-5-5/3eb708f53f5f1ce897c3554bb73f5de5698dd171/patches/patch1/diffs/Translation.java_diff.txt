@@ -1,0 +1,22 @@
+19d18
+< import com.google.api.services.translate.model.TranslationsResource;
+37,38c36,38
+<   static final Function<TranslationsResource, Translation> FROM_PB_FUNCTION =
+<       new Function<TranslationsResource, Translation>() {
+---
+>   static final Function<com.google.api.services.translate.v3.model.Translation, Translation>
+>       FROM_PB_FUNCTION =
+>           new Function<com.google.api.services.translate.v3.model.Translation, Translation>() {
+40c40,41
+<         public Translation apply(TranslationsResource translationPb) {
+---
+>             public Translation apply(
+>                 com.google.api.services.translate.v3.model.Translation translationPb) {
+106c107
+<   static Translation fromPb(TranslationsResource translationPb) {
+---
+>   static Translation fromPb(com.google.api.services.translate.v3.model.Translation translationPb) {
+109c110
+<         translationPb.getDetectedSourceLanguage(),
+---
+>         translationPb.getDetectedLanguageCode(),
