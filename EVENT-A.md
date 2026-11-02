@@ -76,3 +76,92 @@ These tests are indicative only. The valid cases are a subset determined by rate
 - Claude Opus Event A P1 (`runs/event-a-opus-p1`): 12/12 `anthropic.APIConnectionError`, so the model was never reached. No valid data; not analysed.
 - No further reruns. Group decision: execution stopped here, method unchanged.
 - Design implication: see `design-implication.md`.
+
+# Claude Opus 5.5
+
+The following section adds the completed Opus recovery runs. The earlier "Not included" statements refer to the initial Opus execution, not these recovery runs.
+
+## Execution and validity
+
+The initial Opus runs used a different endpoint because of a local configuration error, causing connection failures. The endpoint was restored to the one used in M2. Both prompts were then rerun using the same 12 cases, frozen settings and one repair attempt per case.
+
+The results below come from `runs/event-a-opus-p1-recovery1/` and `runs/event-a-opus-p8-recovery1/`. The original available execution evidence was preserved. The initial P8 run was cancelled.
+
+| Run | Cases with a recorded outcome | Model-response errors |
+|---|---:|---:|
+| P1 recovery | 12 | 2 |
+| P8 recovery | 12 | 8 |
+
+The recovery runs reached Anthropic, but some cases still ended in ERROR_MODEL_RESPONSE. These errors cannot be attributed to the earlier endpoint issue without checking their individual logs.
+
+## Per-case outcome
+
+| Case | P1 | P8 |
+|---|---|---|
+| 1e17e176 snakeyaml (polyglot-maven) | TEST_FAILURE | ERROR_MODEL_RESPONSE |
+| 36859167 fop | BUILD_SUCCESS | BUILD_SUCCESS |
+| 3eb708f5 google-api translate | COMPILATION_FAILURE | ERROR_MODEL_RESPONSE |
+| 43b3a858 logback-classic (pdb) | ERROR_MODEL_RESPONSE | ERROR_MODEL_RESPONSE |
+| 5769bdad github-api | BUILD_SUCCESS | BUILD_SUCCESS |
+| 61e96bfe logback-core | TEST_FAILURE | BUILD_SUCCESS |
+| 741f3b5e jackson | TEST_FAILURE | ERROR_MODEL_RESPONSE |
+| 7c62ae7f hibernate | COMPILATION_FAILURE | ERROR_MODEL_RESPONSE |
+| 7d0e38fa google-api dns | TEST_FAILURE | ERROR_MODEL_RESPONSE |
+| 7f7de81d snmp4j-agent | ERROR_MODEL_RESPONSE | ERROR_MODEL_RESPONSE |
+| 88a20ece pubsublite | COMPILATION_FAILURE | ERROR_MODEL_RESPONSE |
+| b1a94140 snakeyaml (fluxtion) | TEST_FAILURE | TEST_FAILURE |
+
+## Results
+
+| Outcome | P1 | P8 |
+|---|---:|---:|
+| BUILD_SUCCESS | 2 | 3 |
+| COMPILATION_FAILURE | 3 | 0 |
+| TEST_FAILURE | 5 | 1 |
+| ERROR_MODEL_RESPONSE | 2 | 8 |
+| Recorded BSR | **2/12 (16.7%)** | **3/12 (25%)** |
+
+BSR uses all 12 cases, following the frozen M2 rule. Model-response errors count as unsuccessful executions, but do not demonstrate that Opus generated an incorrect repair.
+
+P8 repaired both cases repaired by P1 and gained 61e96bfe, which compiled but failed tests under P1. P8 therefore achieved one additional successful build.
+
+**Semantic-risk coding rule:** there are five successful case-runs across three distinct cases. These need the planned semantic checks before we can report how many patches passed the existing build and tests while still behaving incorrectly.
+
+Six case-runs compiled but failed the existing tests: five under P1 and one under P8. This shows why compilation alone is insufficient. However, the failing tests and patches need inspection before attributing those failures to semantic mistakes introduced by the repair.
+
+**CEFR caveat:** error counters for ERROR_MODEL_RESPONSE cases must not be treated as confirmed fixes. Zero remaining errors in those records do not establish successful compilation or testing.
+
+## Comparison with M2: what transfers, what does not
+
+| Opus BSR | M2 | Event A |
+|---|---:|---:|
+| P1 | 6/12 (50%) | 2/12 (16.7%) |
+| P8 | 4/12 (33.3%) | 3/12 (25%) |
+
+- **Transfers: some complete repairs.** Opus repaired previously unused cases under both prompts.
+- **Lower recorded success:** both prompts repaired fewer builds than in M2. The changed sample criteria and response errors prevent attributing this difference solely to case difficulty.
+- **Different prompt direction:** P8 exceeded P1 by one build, whereas P1 exceeded P8 in M2.
+- **Limited interpretation:** P8 had eight model-response errors against two for P1. Its lower compilation/test-failure counts therefore do not establish better repair quality.
+- **Strongest evidence:** 61e96bfe changed from TEST_FAILURE under P1 to BUILD_SUCCESS under P8, while the two P1 successes remained successful under P8.
+
+## Against the prediction
+
+- "Some but not all repaired": supported for the recorded Opus outcomes. P1 repaired two builds and P8 repaired three.
+- "DeepSeek P8 > P1": the Opus runs do not directly test this model-specific prediction.
+- Challenge condition, "Byam repairs none of the 12 in any configuration": not met once the Opus recovery results are included.
+- Whether these successful patches preserve the required behaviour remains subject to the planned semantic checks.
+
+## Decision (M1 rules)
+
+Opus demonstrates complete repairs on the held-out sample, but the prompt comparison remains provisional. P8 recorded one more successful build than P1, although response errors affected much of the P8 run.
+
+The evidence supports the limited conclusion that the Opus workflow can repair some previously unused dependency updates. It does not establish that P8 is generally better or that successful builds are semantically correct.
+
+The Event A semantic-risk assessment remains incomplete until the successful patches have been checked.
+
+## Not included
+
+- Initial P1 run, `runs/event-a-opus-p1/`: all 12 cases recorded model-response errors associated with connection failures; excluded from the repair comparison.
+- Initial P8 run, `runs/event-a-opus-p8/`: cancelled after the endpoint issue was identified; excluded from completed results.
+- Recovery response-error cases are retained in the recorded BSR denominator but are not treated as confirmed semantic or compilation outcomes.
+- Recovery settings are in `config/env.event-a-opus-p1-recovery1.redacted` and `config/env.event-a-opus-p8-recovery1.redacted`. Logs and results are in the corresponding recovery folders. The endpoint correction is recorded in `deviations.md`.
