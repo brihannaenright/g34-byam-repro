@@ -1,0 +1,9 @@
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at se.kth.Bump.<clinit>(Bump.java:31)
+Caused by: io.github.cdimascio.dotenv.DotEnvException: Malformed entry: ,36859167815292f279e570d39dd2ddbcf1622dc6
+	at io.github.cdimascio.dotenv.internal.DotenvParser.parse(DotenvParser.kt:42)
+	at io.github.cdimascio.dotenv.DotenvBuilder.load(Dotenv.kt:124)
+	at io.github.cdimascio.dotenv.Dotenv$Instance.load(Dotenv.kt:32)
+	at io.github.cdimascio.dotenv.Dotenv.load(Dotenv.kt)
+	at se.kth.Util.Constants.<clinit>(Constants.java:9)
+	... 1 more
