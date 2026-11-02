@@ -1,0 +1,11 @@
+57a58
+> import org.apache.fop.apps.FopFactoryBuilder;
+115c116
+<         FopFactory fopFactory = FopFactory.newInstance();
+---
+>         FopFactory fopFactory = new FopFactoryBuilder(new URI(".")).build();
+153a155,156
+>         } catch (Exception e) {
+>             throw new ExportServiceException("Error initializing FOP", e);
+208d210
+< 

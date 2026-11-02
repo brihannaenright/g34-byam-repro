@@ -1,0 +1,111 @@
+{
+    "deepseek/deepseek-chat": {
+        "prompt_tokens": 78718,
+        "completion_tokens": 38233,
+        "total_tokens": 116951,
+        "prompt_cost": 0.011020520000000002,
+        "completion_cost": 0.02141048,
+        "total_cost": 0.032431,
+        "results": [
+            {
+                "prompt_tokens": 4205,
+                "completion_tokens": 1476,
+                "total_tokens": 5681,
+                "prompt_cost": 0.0005887,
+                "completion_cost": 0.0008265600000000001,
+                "total_cost": 0.0014152600000000002,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/741f3b5e20a91b0e9305ae79261e3c5e64971c98/patches/patch1/prompts/SimpleLocalizeClient.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 3560,
+                "completion_tokens": 2464,
+                "total_tokens": 6024,
+                "prompt_cost": 0.0004984000000000001,
+                "completion_cost": 0.0013798400000000002,
+                "total_cost": 0.0018782400000000002,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/5769bdad76925da568294cb8a40e7d4469699ac3/patches/patch1/prompts/UpdateChecker.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 1601,
+                "completion_tokens": 519,
+                "total_tokens": 2120,
+                "prompt_cost": 0.00022414,
+                "completion_cost": 0.00029064000000000005,
+                "total_cost": 0.0005147800000000001,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/88a20ece4db960e35fbfa39fcb40e61daceb15b1/patches/patch1/prompts/PublisherFactoryImpl.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 7573,
+                "completion_tokens": 5765,
+                "total_tokens": 13338,
+                "prompt_cost": 0.00106022,
+                "completion_cost": 0.0032284,
+                "total_cost": 0.00428862,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/7f7de81d28b68b091bef2e6f6ffd1836167be6ea/patches/patch1/prompts/SnmpmanAgent.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 6803,
+                "completion_tokens": 3153,
+                "total_tokens": 9956,
+                "prompt_cost": 0.00095242,
+                "completion_cost": 0.0017656800000000002,
+                "total_cost": 0.0027181,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/7d0e38fa9d6a9f96afdc0143fa44b4145e3555d8/patches/patch1/prompts/HttpDnsRpc.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 3746,
+                "completion_tokens": 2676,
+                "total_tokens": 6422,
+                "prompt_cost": 0.00052444,
+                "completion_cost": 0.0014985600000000001,
+                "total_cost": 0.002023,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/1e17e176460ab4283e463e62fece844d341da7f0/patches/patch1/prompts/ModelConstructor.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 2919,
+                "completion_tokens": 1865,
+                "total_tokens": 4784,
+                "prompt_cost": 0.00040866000000000003,
+                "completion_cost": 0.0010444,
+                "total_cost": 0.00145306,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/36859167815292f279e570d39dd2ddbcf1622dc6/patches/patch1/prompts/FOPPDFTransformer.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 3230,
+                "completion_tokens": 2171,
+                "total_tokens": 5401,
+                "prompt_cost": 0.00045220000000000004,
+                "completion_cost": 0.0012157600000000002,
+                "total_cost": 0.0016679600000000002,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/1e17e176460ab4283e463e62fece844d341da7f0/patches/patch1/prompts/ModelRepresenter.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 1061,
+                "completion_tokens": 367,
+                "total_tokens": 1428,
+                "prompt_cost": 0.00014854,
+                "completion_cost": 0.00020552,
+                "total_cost": 0.00035406,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/1e17e176460ab4283e463e62fece844d341da7f0/patches/patch1/prompts/YamlModelReader.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 41100,
+                "completion_tokens": 16000,
+                "total_tokens": 57100,
+                "prompt_cost": 0.005754000000000001,
+                "completion_cost": 0.00896,
+                "total_cost": 0.014714000000000001,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/43b3a858b77ec27fc8946aba292001c3de465012/patches/patch1/prompts/EngineGeneralTest.java_prompt.txt"
+            },
+            {
+                "prompt_tokens": 2920,
+                "completion_tokens": 1777,
+                "total_tokens": 4697,
+                "prompt_cost": 0.0004088,
+                "completion_cost": 0.0009951200000000002,
+                "total_cost": 0.0014039200000000001,
+                "file_path": "../g34-byam-repro/runs/event-a/p8/deepseek-deepseek-chat/b1a941400d68445d76056ab8833cd6d2e3455954/patches/patch1/prompts/GraphOfInstancesTest.java_prompt.txt"
+            }
+        ]
+    }
+}
