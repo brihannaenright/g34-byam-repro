@@ -1,0 +1,8 @@
+23,25c23,25
+< import com.google.api.services.translate.model.DetectionsResourceItems;
+< import com.google.api.services.translate.model.LanguagesResource;
+< import com.google.api.services.translate.model.TranslationsResource;
+---
+> import com.google.api.services.translate.v2.model.DetectionsResourceItems;
+> import com.google.api.services.translate.v2.model.LanguagesResource;
+> import com.google.api.services.translate.v2.model.TranslationsResource;

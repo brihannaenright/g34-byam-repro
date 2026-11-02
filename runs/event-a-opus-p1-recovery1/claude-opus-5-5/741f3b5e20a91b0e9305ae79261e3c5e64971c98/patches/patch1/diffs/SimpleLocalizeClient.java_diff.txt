@@ -1,0 +1,12 @@
+88c88,96
+<     ExportResponse exportResponse = objectMapper.readValue(body, ExportResponse.class);
+---
+>     ExportResponse exportResponse;
+>     try
+>     {
+>       Object parsed = JsonPath.parse(body).read("$");
+>       exportResponse = objectMapper.convertValue(parsed, ExportResponse.class);
+>     } catch (RuntimeException e)
+>     {
+>       throw new IOException("Unable to parse export response", e);
+>     }

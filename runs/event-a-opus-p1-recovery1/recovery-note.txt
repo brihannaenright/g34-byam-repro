@@ -1,0 +1,1 @@
+First Event A Opus runs encountered model-response errors. Diagnostics found inherited ANTHROPIC_BASE_URL pointing to an unresolvable Telnyx endpoint. Direct Anthropic API smoke test succeeded. Recovery uses the original P1 settings and cases, fresh paths, and ANTHROPIC_BASE_URL=https://api.anthropic.com. Original run evidence is preserved.

@@ -1,0 +1,42 @@
+33a34
+> import java.io.ByteArrayOutputStream;
+52a54,55
+>     private static final byte[] EMPTY_BYTES = new byte[0];
+> 
+57d59
+<     @Override
+68d69
+<     @Override
+78d78
+<     @Override
+79a80
+>       if (framedTransport != null) {
+83a85,112
+>     @Override
+>     public byte[] headerBytes() {
+>       return EMPTY_BYTES;
+>     }
+> 
+>     @Override
+>     public byte[] encode(LogMessage logMessage) {
+>       ByteArrayOutputStream baos = new ByteArrayOutputStream();
+>       try {
+>         final int bufferCapacity = 10;
+>         TTransport transport = new TFastFramedTransport(new TIOStreamTransport(baos),
+>             bufferCapacity);
+>         TProtocol proto = new TBinaryProtocol(transport);
+>         logMessage.write(proto);
+>         transport.flush();
+>       } catch (TException e) {
+>         addError("Failed to encode LogMessage", e);
+>         return EMPTY_BYTES;
+>       }
+>       return baos.toByteArray();
+>     }
+> 
+>     @Override
+>     public byte[] footerBytes() {
+>       return EMPTY_BYTES;
+>     }
+>   }
+> 

@@ -1,0 +1,28 @@
+18a19,20
+> import com.google.cloud.pubsublite.MessageMetadata;
+> import com.google.cloud.pubsublite.Partition;
+20d21
+< import com.google.cloud.pubsublite.PublishMetadata;
+23a25
+> import com.google.cloud.pubsublite.internal.wire.PartitionPublisherFactory;
+36c38
+<   public Publisher<PublishMetadata> newPublisher(Map<String, String> params) {
+---
+>   public Publisher<MessageMetadata> newPublisher(Map<String, String> params) {
+49,50c51,54
+<         partition ->
+<             SinglePartitionPublisherBuilder.newBuilder()
+---
+>         new PartitionPublisherFactory() {
+>           @Override
+>           public Publisher<MessageMetadata> newPublisher(Partition partition) {
+>             return SinglePartitionPublisherBuilder.newBuilder()
+54c58,63
+<                 .build());
+---
+>                 .build();
+>           }
+> 
+>           @Override
+>           public void close() {}
+>         });

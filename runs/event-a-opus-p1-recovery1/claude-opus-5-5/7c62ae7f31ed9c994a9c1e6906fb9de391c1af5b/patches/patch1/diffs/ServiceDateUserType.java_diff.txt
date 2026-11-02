@@ -1,0 +1,29 @@
+27a28
+> import org.hibernate.engine.spi.SharedSessionContractImplementor;
+68d68
+<   @Override
+70a71,80
+>     return doNullSafeGet(rs, names);
+>   }
+> 
+>   @Override
+>   public Object nullSafeGet(ResultSet rs, String[] names, SharedSessionContractImplementor sessionImplementor, Object owner)
+>       throws HibernateException, SQLException {
+>     return doNullSafeGet(rs, names);
+>   }
+> 
+>   private Object doNullSafeGet(ResultSet rs, String[] names) throws HibernateException, SQLException {
+84d93
+<   @Override
+86a96,106
+>     doNullSafeSet(st, value, index);
+>   }
+> 
+>   @Override
+>   public void nullSafeSet(PreparedStatement st, Object value, int index, SharedSessionContractImplementor sessionImplementor)
+>       throws HibernateException, SQLException {
+>     doNullSafeSet(st, value, index);
+>   }
+> 
+>   private void doNullSafeSet(PreparedStatement st, Object value, int index)
+>       throws HibernateException, SQLException {
