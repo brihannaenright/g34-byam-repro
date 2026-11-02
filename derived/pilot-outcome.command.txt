@@ -1,0 +1,1 @@
+jq --arg c <case> '{case:$c} + (.[$c].attempts[0] | {...})' runs/pilot/deepseek-deepseek-chat/result_repair_deepseek-deepseek-chat.json
