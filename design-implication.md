@@ -38,3 +38,21 @@ The forces do not justify one. There are four providers, they change rarely, and
 ## Consequence for our study
 
 Every `ERROR_MODEL_RESPONSE` must be checked against `run.log` before it can be counted as a model outcome. We did this for Event A: the rate-limit, missing-key and connection failures were logged in `deviations.md` and rerun. Only 43b3a858 (P8, cut-off reply) is counted as a genuine non-repair.
+
+## Verification Plan (M4)
+
+To verify the proposed error-handling refactoring, we will test the following scenarios using simulated responses, without making real API requests.
+
+| Test | Expected outcome |
+|---|---|
+| HTTP 401 — Invalid API key | Recorded as an authentication failure |
+| HTTP 429 — Rate limit | Recorded as a rate-limit failure |
+| Network connection failure | Recorded as a network failure |
+| Truncated or invalid model response | Recorded as an unusable model response |
+| Successful model response | Existing repair process continues normally |
+
+We will also verify that failed API requests do not result in a successful repair classification or incorrectly report compilation errors as fixed when no patch was applied.
+
+The tests will check that error information is preserved, that different failures can be distinguished, and that normal repair behaviour is not affected.
+
+Test outputs and results will be recorded after implementation to provide evidence that the refactoring works as intended.
