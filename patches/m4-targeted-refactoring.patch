@@ -1,0 +1,136 @@
+diff --git a/core/src/main/java/se/kth/prompt/GeneratePrompt.java b/core/src/main/java/se/kth/prompt/GeneratePrompt.java
+index 38e80d71a..5276215dc 100644
+--- a/core/src/main/java/se/kth/prompt/GeneratePrompt.java
++++ b/core/src/main/java/se/kth/prompt/GeneratePrompt.java
+@@ -5,9 +5,7 @@ import org.slf4j.LoggerFactory;
+ import se.kth.model.PromptModel;
+ import se.kth.model.PromptPipeline;
+ 
+-import java.io.BufferedReader;
+ import java.io.IOException;
+-import java.io.InputStreamReader;
+ import java.nio.file.Files;
+ import java.nio.file.Path;
+ 
+@@ -85,36 +83,39 @@ public class GeneratePrompt {
+         return prompt;
+     }
+ 
+-    public String callPythonScript(String scriptPath, Path prompt) {
+-
+-        StringBuilder output = new StringBuilder();
+-        try {
+-            ProcessBuilder pb = new ProcessBuilder("python3", scriptPath, prompt.toAbsolutePath().toString());
+-            Process process = pb.start();
+-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+-            String line;
+-            while ((line = reader.readLine()) != null) {
+-                output.append(line).append("\n");
+-            }
+-
+-            // Read all errors from the process
+-            BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+-            StringBuilder errors = new StringBuilder();
+-
+-            while ((line = errorReader.readLine()) != null) {
+-                errors.append(line).append(System.lineSeparator());
+-            }
+-            int exitCode = process.waitFor();
+-            if (exitCode == 0) {
+-                log.info("Script executed successfully:");
+-            } else {
+-                System.err.println("Script failed with exit code: " + exitCode);
+-                System.err.println(errors.toString());
++    public String callPythonScript(String scriptPath, Path prompt)
++            throws IOException, InterruptedException {
++        Process process = new ProcessBuilder(
++                "python3", scriptPath, prompt.toAbsolutePath().toString()
++        ).start();
++
++        try (var executor = java.util.concurrent.Executors.newVirtualThreadPerTaskExecutor()) {
++            var stdout = executor.submit(() ->
++                    new String(process.getInputStream().readAllBytes(),
++                            java.nio.charset.StandardCharsets.UTF_8));
++            var stderr = executor.submit(() ->
++                    new String(process.getErrorStream().readAllBytes(),
++                            java.nio.charset.StandardCharsets.UTF_8));
++
++            try {
++                int exitCode = process.waitFor();
++                String output = stdout.get();
++                String errors = stderr.get();
++
++                if (exitCode != 0) {
++                    throw new IOException("Python model call failed (exit code "
++                            + exitCode + "): " + errors.strip());
++                }
++                log.info("Python model script executed successfully.");
++                return output;
++            } catch (InterruptedException e) {
++                process.destroyForcibly();
++                Thread.currentThread().interrupt();
++                throw e;
++            } catch (java.util.concurrent.ExecutionException e) {
++                throw new IOException("Failed to read Python script output.", e.getCause());
+             }
+-        } catch (Exception e) {
+-            log.error("Error executing the Python script: {}", scriptPath, e);
+         }
+-        return output.toString();
+     }
+ 
+     public String extractContentFromModelResponse(String input) {
+diff --git a/llm/models/openrouter.py b/llm/models/openrouter.py
+index 4b418a9dc..c6cad0cc0 100644
+--- a/llm/models/openrouter.py
++++ b/llm/models/openrouter.py
+@@ -33,23 +33,32 @@ class OpenRouterModels:
+             "provider": self.provider_args,
+         }
+ 
+-        response = requests.post(
+-            url="https://openrouter.ai/api/v1/chat/completions",
+-            headers={
+-                "Authorization": f"Bearer {self.openrouter_api_key}",
+-                # Shows in rankings on openrouter.ai.
+-                "X-Title": f"bacardi",
+-            },
+-            timeout=1000,
+-            data=json.dumps(model_client),
+-        )
+-
+-        response = response.json()
+-
+-        if "error" in response:
+-            raise Exception(response["error"])
+-
+-        return response
++        try:
++            response = requests.post(
++                url="https://openrouter.ai/api/v1/chat/completions",
++                headers={
++                    "Authorization": f"Bearer {self.openrouter_api_key}",
++                    "X-Title": "bacardi",
++                },
++                timeout=1000,
++                data=json.dumps(model_client),
++            )
++            response.raise_for_status()
++        except requests.exceptions.RequestException as e:
++            raise RuntimeError(f"OpenRouter request failed: {e}") from e
++
++        try:
++            result = response.json()
++        except ValueError as e:
++            raise RuntimeError("OpenRouter returned an invalid JSON response.") from e
++
++        if not isinstance(result, dict):
++            raise RuntimeError("OpenRouter returned an unexpected response format.")
++
++        if "error" in result:
++            raise RuntimeError("OpenRouter API error: " + str(result.get("error")))
++
++        return result
+ 
+     @staticmethod
+     def token_cost(response: Any, model_name: str):
