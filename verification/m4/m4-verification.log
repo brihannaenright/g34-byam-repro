@@ -1,0 +1,272 @@
+2026-11-12T20:06:35+00:00
+ff4008413d311b39ab055ec6193ea18780b21236
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] bacardi                                                            [pom]
+[[1;34mINFO[m] breaking-classifier                                                [jar]
+[[1;34mINFO[m] docker-build                                                       [jar]
+[[1;34mINFO[m] git-manager                                                        [jar]
+[[1;34mINFO[m] extractor                                                          [jar]
+[[1;34mINFO[m] core                                                               [jar]
+[[1;34mINFO[m] test-failures                                                      [jar]
+[[1;34mINFO[m] semantic-changes                                                   [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------------< [0;36mse.kth:bacardi[0;1m >---------------------------[m
+[[1;34mINFO[m] [1mBuilding bacardi 1.0-SNAPSHOT                                      [1/8][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mse.kth:breaking-classifier[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding breaking-classifier 1.0-SNAPSHOT                          [2/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/breaking-classifier/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 13 source files to /home/francis/g34/m4-verification/bacardi/breaking-classifier/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/breaking-classifier/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.0:jar[m [1m(default-jar)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/breaking-classifier/target/breaking-classifier-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.4:shade[m [1m(default)[m @ [36mbreaking-classifier[0;1m ---[m
+[[1;34mINFO[m] Including org.slf4j:slf4j-api:jar:2.0.16 in the shaded jar.
+[[1;34mINFO[m] Including ch.qos.logback:logback-classic:jar:1.5.6 in the shaded jar.
+[[1;34mINFO[m] Including ch.qos.logback:logback-core:jar:1.5.6 in the shaded jar.
+[[1;34mINFO[m] Including org.projectlombok:lombok:jar:1.18.34 in the shaded jar.
+[[1;34mINFO[m] Including org.yaml:snakeyaml:jar:2.0 in the shaded jar.
+[[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
+[[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
+[[1;33mWARNING[m] Discovered module-info.class. Shading will break its strong encapsulation.
+[[1;33mWARNING[m] breaking-classifier-1.0-SNAPSHOT.jar, logback-classic-1.5.6.jar, logback-core-1.5.6.jar, lombok-1.18.34.jar, slf4j-api-2.0.16.jar, snakeyaml-2.0.jar define 1 overlapping resource: 
+[[1;33mWARNING[m]   - META-INF/MANIFEST.MF
+[[1;33mWARNING[m] slf4j-api-2.0.16.jar, snakeyaml-2.0.jar define 1 overlapping classes: 
+[[1;33mWARNING[m]   - META-INF.versions.9.module-info
+[[1;33mWARNING[m] maven-shade-plugin has detected that some class files are
+[[1;33mWARNING[m] present in two or more JARs. When this happens, only one
+[[1;33mWARNING[m] single version of the class is copied to the uber jar.
+[[1;33mWARNING[m] Usually this is not harmful and you can skip these warnings,
+[[1;33mWARNING[m] otherwise try to manually exclude artifacts based on
+[[1;33mWARNING[m] mvn dependency:tree -Ddetail=true and the above output.
+[[1;33mWARNING[m] See http://maven.apache.org/plugins/maven-shade-plugin/
+[[1;34mINFO[m] Replacing original artifact with shaded artifact.
+[[1;34mINFO[m] Replacing /home/francis/g34/m4-verification/bacardi/breaking-classifier/target/breaking-classifier-1.0-SNAPSHOT.jar with /home/francis/g34/m4-verification/bacardi/breaking-classifier/target/breaking-classifier-1.0-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] Dependency-reduced POM written at: /home/francis/g34/m4-verification/bacardi/breaking-classifier/dependency-reduced-pom.xml
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36mse.kth:docker-build[0;1m >-------------------------[m
+[[1;34mINFO[m] [1mBuilding docker-build 1.0-SNAPSHOT                                 [3/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mdocker-build[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/docker-build/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mdocker-build[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/francis/g34/m4-verification/bacardi/docker-build/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mdocker-build[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/docker-build/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mdocker-build[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mdocker-build[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mdocker-build[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/docker-build/target/docker-build-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36mse.kth:git-manager[0;1m >-------------------------[m
+[[1;34mINFO[m] [1mBuilding git-manager 1.0-SNAPSHOT                                  [4/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/git-manager/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/francis/g34/m4-verification/bacardi/git-manager/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/git-manager/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/git-manager/target/git-manager-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.6.0:single[m [1m(git-manager)[m @ [36mgit-manager[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/git-manager/target/GitManager.jar
+[[1;33mWARNING[m] Configuration option 'appendAssemblyId' is set to false.
+Instead of attaching the assembly file: /home/francis/g34/m4-verification/bacardi/git-manager/target/GitManager.jar, it will become the file for main project artifact.
+NOTE: If multiple descriptors or descriptor-formats are provided for this project, the value of this file will be non-deterministic!
+[[1;33mWARNING[m] Replacing pre-existing project main-artifact file: /home/francis/g34/m4-verification/bacardi/git-manager/target/git-manager-1.0-SNAPSHOT.jar
+with assembly file: /home/francis/g34/m4-verification/bacardi/git-manager/target/GitManager.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------------< [0;36mse.kth:extractor[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding extractor 1.0-SNAPSHOT                                    [5/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mextractor[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/extractor/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mextractor[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 15 source files to /home/francis/g34/m4-verification/bacardi/extractor/target/classes
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/extractor/src/main/java/se/kth/spoon/SpoonUtilities.java: /home/francis/g34/m4-verification/bacardi/extractor/src/main/java/se/kth/spoon/SpoonUtilities.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/extractor/src/main/java/se/kth/spoon/SpoonUtilities.java: Recompile with -Xlint:deprecation for details.
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/extractor/src/main/java/se/kth/Main.java: /home/francis/g34/m4-verification/bacardi/extractor/src/main/java/se/kth/Main.java uses unchecked or unsafe operations.
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/extractor/src/main/java/se/kth/Main.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mextractor[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/extractor/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mextractor[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mextractor[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mextractor[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/extractor/target/extractor-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------------< [0;36mse.kth:core[0;1m >-----------------------------[m
+[[1;34mINFO[m] [1mBuilding core 1.0-SNAPSHOT                                         [6/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 45 source files to /home/francis/g34/m4-verification/bacardi/core/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/core/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/core/target/core-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.6.0:single[m [1m(bacardi)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/core/target/Bacardi.jar
+[[1;33mWARNING[m] Configuration option 'appendAssemblyId' is set to false.
+Instead of attaching the assembly file: /home/francis/g34/m4-verification/bacardi/core/target/Bacardi.jar, it will become the file for main project artifact.
+NOTE: If multiple descriptors or descriptor-formats are provided for this project, the value of this file will be non-deterministic!
+[[1;33mWARNING[m] Replacing pre-existing project main-artifact file: /home/francis/g34/m4-verification/bacardi/core/target/core-1.0-SNAPSHOT.jar
+with assembly file: /home/francis/g34/m4-verification/bacardi/core/target/Bacardi.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-assembly-plugin:3.6.0:single[m [1m(bump)[m @ [36mcore[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/core/target/Bump.jar
+[[1;33mWARNING[m] Configuration option 'appendAssemblyId' is set to false.
+Instead of attaching the assembly file: /home/francis/g34/m4-verification/bacardi/core/target/Bump.jar, it will become the file for main project artifact.
+NOTE: If multiple descriptors or descriptor-formats are provided for this project, the value of this file will be non-deterministic!
+[[1;33mWARNING[m] Replacing pre-existing project main-artifact file: /home/francis/g34/m4-verification/bacardi/core/target/Bacardi.jar
+with assembly file: /home/francis/g34/m4-verification/bacardi/core/target/Bump.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36mse.kth:test-failures[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding test-failures 1.0-SNAPSHOT                                [7/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mtest-failures[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 5 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mtest-failures[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 22 source files to /home/francis/g34/m4-verification/bacardi/test-failures/target/classes
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/test-failures/src/main/java/se/kth/extractor/TrueFailingTestCasesProvider.java: Some input files use unchecked or unsafe operations.
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/test-failures/src/main/java/se/kth/extractor/TrueFailingTestCasesProvider.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mtest-failures[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/test-failures/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mtest-failures[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mtest-failures[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mtest-failures[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/test-failures/target/test-failures-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mse.kth:semantic-changes[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding semantic-changes 1.0-SNAPSHOT                             [8/8][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36msemantic-changes[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36msemantic-changes[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 16 source files to /home/francis/g34/m4-verification/bacardi/semantic-changes/target/classes
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/semantic-changes/src/main/java/se/kth/rebuild/util/CreateDockerImage.java: /home/francis/g34/m4-verification/bacardi/semantic-changes/src/main/java/se/kth/rebuild/util/CreateDockerImage.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /home/francis/g34/m4-verification/bacardi/semantic-changes/src/main/java/se/kth/rebuild/util/CreateDockerImage.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36msemantic-changes[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/francis/g34/m4-verification/bacardi/semantic-changes/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36msemantic-changes[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36msemantic-changes[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36msemantic-changes[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/francis/g34/m4-verification/bacardi/semantic-changes/target/semantic-changes-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for bacardi 1.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] bacardi ............................................ [1;32mSUCCESS[m [  0.006 s]
+[[1;34mINFO[m] breaking-classifier ................................ [1;32mSUCCESS[m [ 11.746 s]
+[[1;34mINFO[m] docker-build ....................................... [1;32mSUCCESS[m [  5.290 s]
+[[1;34mINFO[m] git-manager ........................................ [1;32mSUCCESS[m [  5.219 s]
+[[1;34mINFO[m] extractor .......................................... [1;32mSUCCESS[m [  7.835 s]
+[[1;34mINFO[m] core ............................................... [1;32mSUCCESS[m [ 43.580 s]
+[[1;34mINFO[m] test-failures ...................................... [1;32mSUCCESS[m [ 18.489 s]
+[[1;34mINFO[m] semantic-changes ................................... [1;32mSUCCESS[m [  8.217 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:40 min
+[[1;34mINFO[m] Finished at: 2026-11-12T20:08:20Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+20:08:28.046 [main] INFO  se.kth.prompt.GeneratePrompt - Python model script executed successfully.
+PASS: successful call returned its reply
+PASS: failed call rejected; exit code and stderr preserved
