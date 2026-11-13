@@ -1,0 +1,16 @@
+
+=== pre-m4-bacardi ===
+09:38:17.189 [main] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+PASS: successful call returned its reply
+Script failed with exit code: 1
+simulated model failure
+
+Exception in thread "main" java.lang.AssertionError: Failed call was accepted
+	at M4Check.main(M4Check.java:19)
+Check exit code: 1
+
+=== m4-verification/bacardi ===
+09:38:18.607 [main] INFO  se.kth.prompt.GeneratePrompt - Python model script executed successfully.
+PASS: successful call returned its reply
+PASS: failed call rejected; exit code and stderr preserved
+Check exit code: 0

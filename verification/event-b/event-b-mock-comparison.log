@@ -1,0 +1,120 @@
+
+=== pre-m4-bacardi ===
+
+Before parser edit: new-format reply
+Script failed with exit code: 1
+/tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/mock_reply.py", line 18, in <module>
+    print(init_openroute("mock prompt", sys.argv[1]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/call_llm.py", line 58, in init_openroute
+    text = _result['choices'][0]['message']['content']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'content'
+
+Java returned: <empty>
+
+Parser diff
+--- /home/francis/g34/pre-m4-bacardi/llm/call_llm.py	2026-11-13 09:34:27.665155169 +0000
++++ /tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/call_llm.py	2026-11-13 09:39:52.518288782 +0000
+@@ -55,7 +55,7 @@
+ def init_openroute(prompt, file_path):
+     model_response = OpenRouterModels(os.getenv("LLM"), prompt)
+     _result = model_response._generate_response()
+-    text = _result['choices'][0]['message']['content']
++    text = _result['choices'][0]['message']['text']
+     cost = model_response.token_cost(_result, os.getenv("LLM"))
+     # Instantiate LLMResolver so that update_costs gets self with cost_data and file_path initialized
+     resolver = LLMResolver()
+
+After parser edit: valid reply
+09:39:57.704 [main] INFO  se.kth.prompt.GeneratePrompt - Script executed successfully:
+Java returned: mock repaired code
+
+After parser edit: missing reply
+Script failed with exit code: 1
+/tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/mock_reply.py", line 18, in <module>
+    print(init_openroute("mock prompt", sys.argv[1]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/tmp.2Abd8jAiay/pre-m4-bacardi/llm/call_llm.py", line 58, in init_openroute
+    text = _result['choices'][0]['message']['text']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'text'
+
+Java returned: <empty>
+
+=== m4-verification/bacardi ===
+
+Before parser edit: new-format reply
+Java rejected the call: Python model call failed (exit code 1): /tmp/tmp.2Abd8jAiay/m4-verification/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/tmp/tmp.2Abd8jAiay/m4-verification/llm/mock_reply.py", line 18, in <module>
+    print(init_openroute("mock prompt", sys.argv[1]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/tmp.2Abd8jAiay/m4-verification/llm/call_llm.py", line 58, in init_openroute
+    text = _result['choices'][0]['message']['content']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'content'
+
+Parser diff
+--- /home/francis/g34/m4-verification/bacardi/llm/call_llm.py	2026-11-12 20:06:12.640764435 +0000
++++ /tmp/tmp.2Abd8jAiay/m4-verification/llm/call_llm.py	2026-11-13 09:40:08.182312800 +0000
+@@ -55,7 +55,7 @@
+ def init_openroute(prompt, file_path):
+     model_response = OpenRouterModels(os.getenv("LLM"), prompt)
+     _result = model_response._generate_response()
+-    text = _result['choices'][0]['message']['content']
++    text = _result['choices'][0]['message']['text']
+     cost = model_response.token_cost(_result, os.getenv("LLM"))
+     # Instantiate LLMResolver so that update_costs gets self with cost_data and file_path initialized
+     resolver = LLMResolver()
+
+After parser edit: valid reply
+09:40:13.565 [main] INFO  se.kth.prompt.GeneratePrompt - Python model script executed successfully.
+Java returned: mock repaired code
+
+After parser edit: missing reply
+Java rejected the call: Python model call failed (exit code 1): /tmp/tmp.2Abd8jAiay/m4-verification/llm/models/gemini.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/tmp/tmp.2Abd8jAiay/m4-verification/llm/mock_reply.py", line 18, in <module>
+    print(init_openroute("mock prompt", sys.argv[1]))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/tmp.2Abd8jAiay/m4-verification/llm/call_llm.py", line 58, in init_openroute
+    text = _result['choices'][0]['message']['text']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'text'
